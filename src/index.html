@@ -52,22 +52,13 @@
     <link rel="stylesheet" href="styles/index.css" />
 
     <style>
-      .fade-in {
-        opacity: 0;
-        transform: translateY(20px);
-        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-      }
-    
-      .fade-in.visible {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      
     </style>
   </head>
 
   <body style="position: relative; margin: 0; padding: 0; padding-bottom: 300px">
     <!--==================== NAVBAR ====================-->
-    <nav class="navbar navbar-expand-lg navbar-light py-3" style="background-color: var(--bs-primary)">
+    <nav class="navbar navbar-expand-lg navbar-light py-3 position-fixed" style="background-color: var(--bs-primary); z-index: 1; width: 100%; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
       <div class="container-fluid">
         <a class="navbar-brand" style="color: var(--bs-secondary)" href="index.html">Panificio da Nanà</a>
         <button
@@ -214,9 +205,7 @@
 
     <!--==================== FOOTER ====================-->
     <footer class="bg-body-tertiary text-center" style="background-color: var(--bs-primary); position: absolute; bottom: 0; width: 100%;">
-      <!-- Grid container -->
       <div class="container p-4 pb-0 fade-in">
-        <!-- Section: Social media -->
         <section class="mb-4">
           <!-- Facebook -->
           <a
