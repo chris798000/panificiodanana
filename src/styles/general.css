@@ -1,8 +1,8 @@
 :root {
-  --bs-primary: #0c0b0e;
-  --bs-secondary: #f4d06f;
-  --bs-tertiary: #dedddd;
-  --text-color: rgb(255, 255, 255);
+  --bs-primary: #f8f8ff;
+  --bs-secondary: #0d1321;
+  --bs-tertiary: #2b2b2b;
+  --text-color: rgb(26, 26, 26);
 }
 
 html {
@@ -100,7 +100,7 @@ h6 {
 }
 
 .navbar-nav .nav-link {
-  color: #ffffff; /* Unactive color */
+  color: var(--text-color); /* Unactive color */
   opacity: 0.7; /* Less opacity for unactive items */
 }
 
@@ -111,7 +111,7 @@ h6 {
 }
 
 .dropdown-menu .dropdown-item {
-  color: #ffffff; /* Unactive color */
+  color: var(--text-color); /* Unactive color */
   opacity: 0.7; /* Less opacity for unactive items */
 }
 
