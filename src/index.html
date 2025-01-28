@@ -50,47 +50,6 @@
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="styles/general.css" />
     <link rel="stylesheet" href="styles/index.css" />
-
-    <style>
-      #languageDropdown {
-        background-color: black;
-        color: white;
-        border: 1px solid black;
-        padding: 0.25rem 0.5rem;
-        border-radius: 5px;
-      }
-
-      #dropdown-language {
-        position: fixed;
-        bottom: 20px;
-        left: 20px;
-        color: white;
-        width: 50px;
-        height: 50px;
-        font-size: 20px;
-        cursor: pointer;
-        z-index: 1000;
-      }
-
-      #languageDropdownMenu {
-        background-color: rgba(0, 0, 0, 0.8); /* Black with transparency */
-        color: white;
-        border-radius: 10px; /* Rounded corners */
-      }
-
-      #languageDropdownMenu .dropdown-item {
-        color: white;
-      }
-
-      #languageDropdownMenu .dropdown-item:hover {
-        background-color: rgba(
-          255,
-          255,
-          255,
-          0.1
-        ); /* Light transparent hover effect */
-      }
-    </style>
   </head>
 
   <body
@@ -216,7 +175,7 @@
     <!-- Call Button -->
     <a
       href="tel:+1234567890"
-      class="btn-call"
+      class="btn-call d-block d-md-none"
       role="button"
       aria-label="Call us"
     >
@@ -242,8 +201,11 @@
         id="languageDropdown"
         data-bs-toggle="dropdown"
         aria-expanded="false"
+        data-lang-it="Italiano"
+        data-lang-en="English"
+        data-lang-fr="Français"
       >
-        🌐
+        Italiano
       </button>
       <ul
         class="dropdown-menu"
