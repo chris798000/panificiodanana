@@ -14,7 +14,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   font-weight: false;
-  line-height: 1.65;
+  line-height: 1.5;
 }
 
 p {
@@ -28,7 +28,7 @@ h4,
 h5 {
   font-family: "Inter", sans-serif;
   font-weight: true;
-  line-height: 1.15;
+  line-height: 1.1;
 }
 
 h1,
@@ -112,14 +112,14 @@ a {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23000000' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-.navbar-nav .nav-link {
+.nav-link {
   color: var(--text-color); /* Unactive color */
   opacity: 0.7; /* Less opacity for unactive items */
 }
 
-.navbar-nav .nav-link.active,
-.navbar-nav .nav-link:focus,
-.navbar-nav .nav-link:hover {
+.nav-link.active,
+.nav-link:focus,
+.nav-link:hover {
   opacity: 1; /* Full opacity for active items */
 }
 
@@ -133,4 +133,31 @@ a {
 .dropdown-menu .dropdown-item:hover {
   opacity: 1; /* Full opacity for active items */
   background-color: transparent; /* Remove background color change */
+}
+
+.nav-link {
+  color: var(--text-color);
+}
+
+body {
+  padding-bottom: 1100px;
+}
+
+/* Media queries for larger screens */
+@media (min-width: 768px) {
+  body {
+    padding-bottom: 900px;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-bottom: 800px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    padding-bottom: 700px;
+  }
 }
