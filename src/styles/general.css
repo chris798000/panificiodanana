@@ -5,52 +5,75 @@
   --text-color: rgb(26, 26, 26);
 }
 
+/* thypo */
+
 html {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 body {
-  background-color: var(--bs-primary);
-  margin: 0;
-  padding: 0;
-  font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: false;
+  line-height: 1.65;
+}
+
+p {
+  font-size: 1em;
 }
 
 h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-}
-
-h1 {
-  font-size: 2.5rem;
-  text-align: center;
-}
-h2 {
-  font-size: 2rem;
-  text-align: center;
-}
-h3 {
-  font-size: 1.75rem;
-}
-h4 {
-  font-size: 1.5rem;
-}
 h5 {
-  font-size: 1.25rem;
-}
-h6 {
-  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  font-weight: true;
+  line-height: 1.15;
 }
 
-#lead {
-  font-size: 1.25rem;
+h1,
+.text-size-h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  margin-top: 0;
+  font-size: 2.49em;
 }
+
+h2,
+.text-size-h2 {
+  font-size: 2.07em;
+}
+
+h3,
+.text-size-h3 {
+  font-size: 1.73em;
+}
+
+h4,
+.text-size-h4 {
+  font-size: 1.44em;
+}
+
+h5,
+.text-size-h5 {
+  font-size: 1.2em;
+}
+
+.text-caption {
+  font-size: 0.83em;
+}
+
+small,
+.text-small {
+  font-size: 0.69em;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+/* end thypo*/
 
 #contact {
   color: var(--text-color);
@@ -78,16 +101,6 @@ h6 {
 }
 
 #dropdown-toggle:focus {
-  opacity: 0.7;
-}
-
-.dropdown-menu {
-  border: none;
-  background-color: var(--bs-primary);
-}
-
-.dropdown-item:hover {
-  background-color: var(--bs-primary);
   opacity: 0.7;
 }
 
