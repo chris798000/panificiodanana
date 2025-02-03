@@ -14,6 +14,10 @@
   .hero-image {
     height: 60vh; /* Adjust height for tablets */
   }
+
+  #card-amati {
+    border: 1px solid #e0e0e0;
+  }
 }
 
 @media (max-width: 768px) {
