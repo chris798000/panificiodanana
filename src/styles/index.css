@@ -1,18 +1,19 @@
+/* HERO*/
 .hero-image {
   width: 100%;
-  height: 100vh; /* Full viewport height for large screens */
+  height: 100vh;
   object-fit: cover;
 }
 
 @media (max-width: 1200px) {
   .hero-image {
-    height: 80vh; /* Adjust height for desktop */
+    height: 80vh;
   }
 }
 
 @media (max-width: 992px) {
   .hero-image {
-    height: 60vh; /* Adjust height for tablets */
+    height: 60vh;
   }
 
   #card-amati {
@@ -22,26 +23,19 @@
 
 @media (max-width: 768px) {
   .hero-image {
-    height: 50vh; /* Adjust height for mobile devices */
+    height: 50vh;
   }
 }
 
-.img-amati {
-  object-fit: cover; /* Ensure the image covers the area while maintaining aspect ratio */
-  width: 100%; /* Ensure the image takes the full width of the container */
-  border-radius: 10px;
+.hero-section .position-absolute.top-0.start-0.w-100.h-100 {
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: 1;
 }
 
-.footer-column {
-  margin-bottom: 30px;
-}
-
-.navbar {
-  position: fixed;
-  top: 0;
-  z-index: 100;
+.hero-section .img-fluid.hero-image {
   width: 100%;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+  z-index: 0;
 }
 
 .btn.d-lg-none {
@@ -58,15 +52,16 @@
   z-index: 2;
 }
 
-.hero-section .position-absolute.top-0.start-0.w-100.h-100 {
-  background-color: rgba(0, 0, 0, 0.55);
-  z-index: 1;
+/* AMATI */
+
+.img-amati {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 10px;
 }
 
-.hero-section .img-fluid.hero-image {
-  width: 100%;
-  object-fit: cover;
-  z-index: 0;
+.footer-column {
+  margin-bottom: 30px;
 }
 
 .container-fluid.amati-section {
@@ -89,7 +84,7 @@
 
 .amati-section .img-amati {
   width: 100%;
-  height: auto;
+  object-fit: cover;
 }
 
 .amati-section .d-flex.align-items-center {
@@ -105,6 +100,25 @@
   margin-top: 15px;
 }
 
+/*CONTACT */
+
+.contact-section .btn {
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  border-radius: 0;
+}
+
+.contact-section .btn:nth-child(2) {
+  background-color: transparent;
+  color: black;
+}
+
+.contact-section img {
+  width: 100%;
+  object-fit: cover;
+}
+
 .container-fluid.contact-section {
   padding: 100px 30px;
 }
@@ -125,6 +139,8 @@
   width: 100%;
   object-fit: cover;
 }
+
+/* STORY*/
 
 .container-fluid.story-section {
   padding: 100px 30px;
@@ -142,23 +158,6 @@
 
 .container-fluid.contact-section {
   padding: 100px 30px;
-}
-
-.contact-section .btn {
-  border: 1px solid black;
-  background-color: black;
-  color: white;
-  border-radius: 0;
-}
-
-.contact-section .btn:nth-child(2) {
-  background-color: transparent;
-  color: black;
-}
-
-.contact-section img {
-  width: 100%;
-  object-fit: cover;
 }
 
 .container-fluid.story-section {
@@ -167,7 +166,6 @@
 }
 
 .story-section img {
-  max-height: 500px;
   border-radius: 10px;
   object-fit: cover;
 }
@@ -176,6 +174,8 @@
   border: 1px solid black;
   border-radius: 0;
 }
+
+/* FOOTER */
 
 .container-fluid.footer-section {
   position: absolute;
@@ -207,6 +207,8 @@
   margin: 4rem 0;
   border-top: 1px solid #dee2e6;
 }
+
+/* LANGUAGE SELECTOR */
 
 #language-selector {
   position: fixed;

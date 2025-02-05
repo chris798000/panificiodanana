@@ -8,18 +8,18 @@
 /* thypo */
 
 html {
-  font-size: clamp(0.8rem, 1vw, 1rem);
+  font-size: clamp(1rem, 1.5vw, 1.25rem); /* Adjusted for responsiveness */
 }
 
 body {
   font-family: "Poppins", sans-serif;
   font-weight: false;
-  line-height: 1.5;
+  line-height: 1.65;
 }
 
 p {
-  font-size: clamp(1rem, 1.5vw, 1.25rem);
-  opacity: 0.85;
+  font-size: clamp(1rem, 1.2vw, 1.125rem);
+  opacity: 0.85; /* Adjusted for responsiveness */
 }
 
 h1,
@@ -27,45 +27,46 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: true;
-  line-height: 1.1;
+  line-height: 1.15;
 }
 
 h1,
 .text-size-h1 {
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   margin-top: 0;
-  font-size: clamp(2.25rem, 6vw, 3.75rem);
+  font-size: clamp(2.5rem, 5vw, 4.21rem); /* Adjusted for responsiveness */
 }
 
 h2,
 .text-size-h2 {
-  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-size: clamp(2rem, 4vw, 3.16rem); /* Adjusted for responsiveness */
 }
 
 h3,
 .text-size-h3 {
-  font-size: clamp(1.25rem, 3vw, 2rem);
+  font-size: clamp(1.5rem, 3vw, 2.37rem); /* Adjusted for responsiveness */
 }
 
 h4,
 .text-size-h4 {
-  font-size: clamp(1.1rem, 2vw, 1.75rem);
+  font-size: clamp(1.25rem, 2.5vw, 1.78rem); /* Adjusted for responsiveness */
 }
 
 h5,
 .text-size-h5 {
-  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  font-size: clamp(1rem, 2vw, 1.33rem); /* Adjusted for responsiveness */
 }
 
 .text-caption {
-  font-size: clamp(0.8rem, 1vw, 1rem);
+  font-size: clamp(0.75rem, 1.5vw, 0.875rem); /* Adjusted for responsiveness */
 }
 
 small,
 .text-small {
-  font-size: clamp(0.8rem, 1vw, 1rem);
+  font-size: clamp(0.5rem, 1vw, 0.75rem); /* Adjusted for responsiveness */
 }
 
 a {
@@ -74,6 +75,14 @@ a {
 }
 
 /* end thypo*/
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.15);
+}
 
 #contact {
   color: var(--text-color);
