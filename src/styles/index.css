@@ -101,6 +101,10 @@
   padding-left: 16px;
 }
 
+.name-amati {
+  margin-top: 15px;
+}
+
 .container-fluid.contact-section {
   padding: 100px 30px;
 }
@@ -159,11 +163,13 @@
 
 .container-fluid.story-section {
   padding: 100px 30px;
+  max-height: 600px;
 }
 
 .story-section img {
-  width: 100%;
+  max-height: 500px;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 .story-section .btn {
