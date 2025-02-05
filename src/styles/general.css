@@ -149,24 +149,17 @@ a {
 }
 
 body {
-  padding-bottom: 1100px;
+  padding-bottom: 1500px; /* Default padding-bottom for small screens */
 }
 
-/* Media queries for larger screens */
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   body {
-    padding-bottom: 900px;
+    padding-bottom: 1500px; /* Adjust padding for extra small screens */
   }
 }
 
 @media (min-width: 992px) {
   body {
-    padding-bottom: 800px;
-  }
-}
-
-@media (min-width: 1200px) {
-  body {
-    padding-bottom: 700px;
+    padding-bottom: 1000px; /* Adjust padding for medium screens */
   }
 }
