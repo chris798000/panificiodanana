@@ -1,11 +1,11 @@
 :root {
-  --bs-primary: #f8f8ff;
-  --bs-secondary: #0d1321;
+  --bs-primary: #002608;
+  --bs-secondary: #e4e4e4;
   --bs-tertiary: #2b2b2b;
   --text-color: rgb(26, 26, 26);
 }
 
-/* thypo */
+/* typo */
 
 html {
   font-size: clamp(1rem, 1.5vw, 1.25rem); /* Adjusted for responsiveness */
@@ -15,6 +15,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: false;
   line-height: 1.65;
+  background-color: whitesmoke;
 }
 
 p {
@@ -37,27 +38,27 @@ h1,
   font-family: "Inter", sans-serif;
   font-weight: 700;
   margin-top: 0;
-  font-size: clamp(2.5rem, 5vw, 4.21rem); /* Adjusted for responsiveness */
+  font-size: clamp(2rem, 4vw, 3rem); /* Adjusted for smaller size */
 }
 
 h2,
 .text-size-h2 {
-  font-size: clamp(2rem, 4vw, 3.16rem); /* Adjusted for responsiveness */
+  font-size: clamp(1.75rem, 3.5vw, 2.75rem); /* Adjusted for smaller size */
 }
 
 h3,
 .text-size-h3 {
-  font-size: clamp(1.5rem, 3vw, 2.37rem); /* Adjusted for responsiveness */
+  font-size: clamp(1.25rem, 2.5vw, 2rem); /* Adjusted for smaller size */
 }
 
 h4,
 .text-size-h4 {
-  font-size: clamp(1.25rem, 2.5vw, 1.78rem); /* Adjusted for responsiveness */
+  font-size: clamp(1rem, 2vw, 1.5rem); /* Adjusted for smaller size */
 }
 
 h5,
 .text-size-h5 {
-  font-size: clamp(1rem, 2vw, 1.33rem); /* Adjusted for responsiveness */
+  font-size: clamp(0.875rem, 1.5vw, 1.25rem); /* Adjusted for smaller size */
 }
 
 .text-caption {
@@ -74,7 +75,7 @@ a {
   color: var(--text-color);
 }
 
-/* end thypo*/
+/* end typo */
 
 .navbar {
   position: fixed;
@@ -97,7 +98,7 @@ a {
 }
 
 #navbar a {
-  color: var(--text-color);
+  color: var(--bs-secondary);
 }
 
 #navbar-toggler {
@@ -146,6 +147,75 @@ a {
 
 .nav-link {
   color: var(--text-color);
+}
+
+.offcanvas-dark {
+  background-color: var(--bs-primary);
+  color: #fff;
+}
+
+.offcanvas-dark .offcanvas-header {
+  border-bottom: 1px solid #495057;
+}
+
+.offcanvas-dark .btn-close {
+  filter: invert(1);
+}
+
+.offcanvas-dark .nav-link {
+  color: #fff;
+}
+
+.offcanvas-dark .nav-link:hover {
+  color: #adb5bd;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #343a40; /* Example background color */
+  color: #fff; /* Example text color */
+}
+
+/* Footer */
+
+.container-fluid.footer-section {
+  position: absolute;
+  bottom: 0;
+  background-color: var(--bs-primary); /* Same background color as navbar */
+  color: #fff;
+}
+
+.footer-section footer {
+  padding: 1rem 0;
+  margin: 5rem 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-section .footer-column {
+  margin-bottom: 1rem;
+}
+
+.footer-section .link-body-emphasis {
+  color: #000;
+}
+
+.footer-section .d-flex.flex-column.flex-sm-row-reverse {
+  padding: 1rem 0;
+  margin: 4rem 0;
+  border-top: 1px solid #dee2e6;
+}
+
+.footer-section a {
+  color: #fff; /* Ensure links are white */
+}
+
+.footer-section a:hover {
+  color: #adb5bd; /* Change link color on hover */
+}
+
+.footer-section .footer-column h5 {
+  color: #fff; /* Ensure footer headings are white */
 }
 
 body {
