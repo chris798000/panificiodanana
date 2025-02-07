@@ -1,5 +1,5 @@
 :root {
-  --bs-primary: #002608;
+  --bs-primary: #0f1d00;
   --bs-secondary: #e4e4e4;
   --bs-tertiary: #2b2b2b;
   --text-color: rgb(26, 26, 26);
@@ -178,7 +178,7 @@ a {
 
 /* Footer */
 
-.container-fluid.footer-section {
+.footer-section {
   position: absolute;
   bottom: 0;
   background-color: var(--bs-primary); /* Same background color as navbar */
@@ -219,17 +219,48 @@ a {
 }
 
 body {
-  padding-bottom: 1500px; /* Default padding-bottom for small screens */
-}
-
-@media (min-width: 576px) {
-  body {
-    padding-bottom: 1500px; /* Adjust padding for extra small screens */
-  }
+  padding-bottom: 1700px; /* Default padding-bottom for small screens */
 }
 
 @media (min-width: 992px) {
   body {
     padding-bottom: 1000px; /* Adjust padding for medium screens */
   }
+}
+
+/* LANGUAGE SELECTOR */
+
+#language-selector {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+#language-selector #choose-lang-button {
+  border-radius: 30px;
+}
+
+#language-selector button {
+  color: #fff;
+  border: none;
+  padding: 10px;
+  background-color: #012500;
+}
+
+#language-menu {
+  display: none;
+  background-color: #012500;
+  border-radius: 30px;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+#language-menu button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  text-align: left;
+  background-color: transparent;
 }
