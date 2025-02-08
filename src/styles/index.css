@@ -151,8 +151,7 @@
   padding: 100px 30px;
 }
 
-.contact-section .btn,
-.hero-section .btn {
+.contact-section .btn {
   border: 1px solid white;
   background-color: white;
   color: black;
