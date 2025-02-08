@@ -122,14 +122,18 @@ a {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23000000' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-.nav-link {
+.nav-link,
+footer a {
   color: var(--text-color); /* Unactive color */
   opacity: 0.7; /* Less opacity for unactive items */
 }
 
 .nav-link.active,
 .nav-link:focus,
-.nav-link:hover {
+.nav-link:hover,
+footer a:hover,
+footer a:focus,
+footer a:active {
   opacity: 1; /* Full opacity for active items */
 }
 
@@ -183,39 +187,6 @@ a {
   bottom: 0;
   background-color: var(--bs-primary); /* Same background color as navbar */
   color: #fff;
-}
-
-.footer-section footer {
-  padding: 1rem 0;
-  margin: 5rem 0;
-  display: flex;
-  justify-content: space-around;
-}
-
-.footer-section .footer-column {
-  margin-bottom: 1rem;
-}
-
-.footer-section .link-body-emphasis {
-  color: #000;
-}
-
-.footer-section .d-flex.flex-column.flex-sm-row-reverse {
-  padding: 1rem 0;
-  margin: 4rem 0;
-  border-top: 1px solid #dee2e6;
-}
-
-.footer-section a {
-  color: #fff; /* Ensure links are white */
-}
-
-.footer-section a:hover {
-  color: #adb5bd; /* Change link color on hover */
-}
-
-.footer-section .footer-column h5 {
-  color: #fff; /* Ensure footer headings are white */
 }
 
 body {
