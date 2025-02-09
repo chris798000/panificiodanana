@@ -24,6 +24,42 @@ a {
 /* end typo */
 
 .navbar {
+  background-color: white !important;
+}
+.navbar .nav-link,
+.navbar .navbar-brand {
+  color: black !important;
+}
+.navbar .nav-link:hover,
+.navbar .navbar-brand:hover {
+  color: #555 !important; /* Colore del testo al passaggio del mouse */
+}
+.offcanvas-dark {
+  background-color: white !important;
+}
+.offcanvas-dark .nav-link,
+.offcanvas-dark .navbar-brand {
+  color: black !important;
+}
+.offcanvas-dark .nav-link:hover,
+.offcanvas-dark .navbar-brand:hover {
+  color: #555 !important; /* Colore del testo al passaggio del mouse */
+}
+.footer-section {
+  background-color: white !important;
+  color: black !important;
+}
+.footer-section a {
+  color: black !important;
+}
+.footer-section a:hover {
+  color: #555 !important; /* Colore del testo al passaggio del mouse */
+}
+.footer-section svg {
+  fill: black !important;
+}
+
+.navbar {
   position: fixed;
   top: 0;
   z-index: 100;
