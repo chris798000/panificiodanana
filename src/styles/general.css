@@ -289,3 +289,11 @@ body {
 .hero-section .position-absolute.top-50.start-50.translate-middle {
   z-index: 2;
 }
+
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

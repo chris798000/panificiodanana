@@ -178,130 +178,395 @@
     </nav>
 
     <!--HERO SECTION-->
-    <div class="container-fluid hero-section">
-      <div class="position-absolute top-50 start-50 translate-middle">
-        <h1 class="text-light text-center">Panificio da Nanà</h1>
+    <!-- Full Page Image Header with Vertically Centered Content -->
+    <header
+      class="masthead"
+      style="
+        background-image: url('images/hero.jpg');
+        margin-top: 56px;
+        height: 100vh;
+        min-height: 500px;
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+      "
+    >
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-12 text-center text-white">
+            <h1 class="fw-light">Vertically Centered Masthead Content</h1>
+            <p class="lead">A great starter layout for a landing page</p>
+          </div>
+        </div>
       </div>
-      <div class="position-absolute top-0 start-0 w-100 h-100"></div>
-      <img src="images/hero.jpg" alt="Hero" class="img-fluid hero-image" />
-    </div>
+    </header>
 
     <!--AMATI SECTION-->
-    <div class="container-fluid amati-section">
-      <div class="row m-0">
-        <div class="col-12 col-md-6">
-          <h1>Scopri le nostre proposte uniche</h1>
-        </div>
-        <div class="col-12 col-md-6 align-content-center">
-          <h4>
-            Utilizziamo solo gli ingredienti migliori per garantire un gusto
-            eccezionale in ogni morso. Esplora le nostre specialità e lasciati
-            conquistare dai nostri sapori.
-          </h4>
-        </div>
-      </div>
-
-      <div class="row flex-column flex-md-row g-3">
-        <div
-          id="card-amati"
-          class="d-flex flex-column col-12 col-lg-4 border-lg-none"
-        >
-          <img src="images/sfincione.jpg" alt="Sfincione" class="img-amati" />
-          <h2 class="name-amati">Sfincione</h2>
-          <p>Soffice, saporito e autenticamente siciliano.</p>
-        </div>
-        <div id="card-amati" class="d-flex flex-column col-12 col-lg-4">
-          <img src="images/pizza.jpg" alt="Pizza" class="img-amati" />
-          <h2 class="name-amati">Pizze</h2>
-          <p>
-            Impasto dorato e ingredienti freschi per un gusto irresistibile.
-          </p>
-        </div>
-        <div id="card-amati" class="d-flex flex-column col-12 col-lg-4">
-          <img src="images/biscotti.jpg" alt="Biscotti" class="img-amati" />
-          <h2 class="name-amati">Biscotti</h2>
-          <p>
-            Dolci tradizionali, croccanti e genuini, perfetti per ogni momento.
-          </p>
-        </div>
-      </div>
-
-      <div class="d-flex align-items-center">
-        <a href="#">Scopri di più</a>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          fill="currentColor"
-          class="bi bi-arrow-right"
-          viewBox="0 0 16 16"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
-          />
-        </svg>
-      </div>
-    </div>
-
-    <!--CONTACT SECTION-->
-    <div class="container-fluid contact-section">
-      <div class="row align-items-center">
-        <div class="col-12 col-lg-6">
-          <h1>Assapora la freschezza dei nostri dolci ogni giorno</h1>
-          <p>
-            Non perdere le ultime novità e le nostre offerte speciali: iscriviti
-            alla nostra newsletter!
-          </p>
-          <div class="d-flex gap-3">
-            <div class="btn">Chiama</div>
-            <div class="btn">Scopri dove trovarci</div>
+    <section class="d-flex align-items-center min-vh-50 my-5">
+      <div class="container text-center mb-md-5">
+        <div class="lc-block">
+          <div class="lc-block mb-3">
+            <div editable="rich">
+              <h1 class="fw-bold display-3">Our Services</h1>
+            </div>
           </div>
-        </div>
-        <div class="col-12 col-lg-6 mt-5 mt-lg-0">
-          <img src="images/logo.svg" alt="Logo" />
-        </div>
-      </div>
-    </div>
-
-    <!--STORY SECTION-->
-    <div class="container-fluid story-section">
-      <div class="row gap-5 gap-lg-0 justify-content-center">
-        <div class="d-flex col-12 col-sm-10 col-lg-6 align-items-center">
-          <div class="container">
-            <div class="row">
-              <h1>La nostra storia: eccellenza dal 1978</h1>
-              <p>
-                Da oltre 30 anni, la nostra passione per la pasticceria ci guida
-                nella creazione di dolci straordinari. Scopri il nostro viaggio
-                nel mondo della dolcezza.
+          <div class="lc-block mb-4 col-xxl-6 mx-auto">
+            <hr />
+          </div>
+          <div class="lc-block">
+            <div editable="rich">
+              <p class="lead">
+                An overview of the services you offer and how<br />they will
+                benefit the visitor
               </p>
             </div>
-            <div class="row">
-              <div class="col-12 col-lg-6">
-                <h1>500+</h1>
-                <p>
-                  Dolci preparati ogni settimana per i nostri clienti felici.
-                </p>
-              </div>
-              <div class="col-12 col-lg-6">
-                <h1>1978+</h1>
-                <p>
-                  L'anno in cui abbiamo iniziato a diffondere la nostra passione
-                  per la pasticceria.
-                </p>
-              </div>
-            </div>
-            <div class="btn">Scopri di più</div>
           </div>
         </div>
-        <div class="col-12 col-sm-10 col-lg-6 col-xl">
-          <img src="images/story.jpg" alt="Story" />
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row align-items-center mb-5">
+          <div class="col-md-6 p-xxl-5">
+            <div class="lc-block">
+              <div editable="rich">
+                <h1 class="fw-bold">Service 1</h1>
+              </div>
+            </div>
+            <!-- /lc-block -->
+            <div class="lc-block">
+              <div editable="rich">
+                <p>
+                  A short paragraph describing exactly what this service offers
+                  and how it helps clients. This is your chance to convince the
+                  visitor that your business is the right choice for them.
+                </p>
+
+                <a class="btn btn-primary" href="#" role="button"
+                  >Scopri di più</a
+                >
+              </div>
+            </div>
+            <!-- /lc-block -->
+          </div>
+          <!-- /col -->
+          <div class="col-md-6">
+            <div class="lc-block">
+              <img class="img-fluid" src="images/pizza.jpg" />
+            </div>
+            <!-- /lc-block -->
+          </div>
+          <!-- /col -->
+        </div>
+        <div class="row align-items-center mb-5">
+          <div class="col-md-6 p-xxl-5 order-md-2">
+            <div class="lc-block">
+              <div editable="rich">
+                <h1 class="fw-bold">Service 2</h1>
+              </div>
+            </div>
+            <!-- /lc-block -->
+            <div class="lc-block">
+              <div editable="rich">
+                <p>
+                  A short paragraph describing exactly what this service offers
+                  and how it helps clients. This is your chance to convince the
+                  visitor that your business is the right choice for them.
+                </p>
+
+                <a class="btn btn-primary" href="#" role="button"
+                  >Scopri di più</a
+                >
+              </div>
+            </div>
+            <!-- /lc-block -->
+          </div>
+          <!-- /col -->
+          <div class="col-md-6">
+            <div class="lc-block">
+              <img class="img-fluid" src="images/pane.jpg" />
+            </div>
+            <!-- /lc-block -->
+          </div>
+          <!-- /col -->
+        </div>
+        <div class="row align-items-center mb-5">
+          <div class="col-md-6 p-xxl-5">
+            <div class="lc-block">
+              <div editable="rich">
+                <h1 class="fw-bold">Service 3</h1>
+              </div>
+            </div>
+            <!-- /lc-block -->
+            <div class="lc-block">
+              <div editable="rich">
+                <p>
+                  A short paragraph describing exactly what this service offers
+                  and how it helps clients. This is your chance to convince the
+                  visitor that your business is the right choice for them.
+                </p>
+
+                <a class="btn btn-primary" href="#" role="button"
+                  >Scopri di più</a
+                >
+              </div>
+            </div>
+            <!-- /lc-block -->
+          </div>
+          <!-- /col -->
+          <div class="col-md-6">
+            <div class="lc-block">
+              <img class="img-fluid" src="images/sfincione.jpg" />
+            </div>
+            <!-- /lc-block -->
+          </div>
+          <!-- /col -->
+        </div>
+        <div class="row align-items-center mb-5">
+          <div class="col-md-6 p-xxl-5 order-md-2">
+            <div class="lc-block">
+              <div editable="rich">
+                <h1 class="fw-bold">Service 4</h1>
+              </div>
+            </div>
+            <!-- /lc-block -->
+            <div class="lc-block">
+              <div editable="rich">
+                <p>
+                  A short paragraph describing exactly what this service offers
+                  and how it helps clients. This is your chance to convince the
+                  visitor that your business is the right choice for them.
+                </p>
+
+                <a class="btn btn-primary" href="#" role="button"
+                  >Scopri di più</a
+                >
+              </div>
+            </div>
+            <!-- /lc-block -->
+          </div>
+          <!-- /col -->
+          <div class="col-md-6">
+            <div class="lc-block">
+              <img class="img-fluid" src="images/biscotti.jpg" />
+            </div>
+            <!-- /lc-block -->
+          </div>
+          <!-- /col -->
+        </div>
+      </div>
+    </section>
+
+    <!--CONTACT SECTION-->
+    <div class="container text-center py-4">
+      <div class="lc-block card border-0 text-center rounded p-4 p-lg-6">
+        <div class="row card-body mb-3 mb-lg-4">
+          <div class="col-xl-11 col-xxl-10 mx-auto">
+            <div class="lc-block mb-5">
+              <p class="text-uppercase" editable="inline">
+                Ready to speed up your Work?
+              </p>
+              <h3 editable="inline" class="fw-bold display-2">
+                Sign up for our <span class="text-primary">Brand</span> today
+              </h3>
+            </div>
+
+            <div class="lc-block mb-4">
+              <div class="d-flex flex-wrap justify-content-center gap-3">
+                <div class="d-inline-flex gap-1 lc-block">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="2em"
+                    height="2em"
+                    fill="currentColor"
+                    class="text-primary my-auto flex-shrink-0"
+                    viewBox="0 0 16 16"
+                    lc-helper="svg-icon"
+                  >
+                    <path
+                      d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"
+                    ></path>
+                    <path
+                      d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"
+                    ></path>
+                  </svg>
+                  <p editable="inline" class="lead my-auto">
+                    30-Day Money-Back Guarantee
+                  </p>
+                </div>
+                <div class="d-inline-flex gap-1 lc-block">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="2em"
+                    height="2em"
+                    fill="currentColor"
+                    class="text-primary my-auto flex-shrink-0"
+                    viewBox="0 0 16 16"
+                    lc-helper="svg-icon"
+                  >
+                    <path
+                      d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"
+                    ></path>
+                    <path
+                      d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"
+                    ></path>
+                  </svg>
+                  <p editable="inline" class="lead my-auto">
+                    No credit card required
+                  </p>
+                </div>
+                <div class="d-inline-flex gap-1 lc-block">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="2em"
+                    height="2em"
+                    fill="currentColor"
+                    class="text-primary my-auto flex-shrink-0"
+                    viewBox="0 0 16 16"
+                    lc-helper="svg-icon"
+                  >
+                    <path
+                      d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"
+                    ></path>
+                    <path
+                      d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"
+                    ></path>
+                  </svg>
+                  <p editable="inline" class="lead my-auto">100% uptime</p>
+                </div>
+                <div class="d-inline-flex gap-1 lc-block">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="2em"
+                    height="2em"
+                    fill="currentColor"
+                    class="text-primary my-auto flex-shrink-0"
+                    viewBox="0 0 16 16"
+                    lc-helper="svg-icon"
+                  >
+                    <path
+                      d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"
+                    ></path>
+                    <path
+                      d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"
+                    ></path>
+                  </svg>
+                  <p editable="inline" class="lead my-auto">
+                    First class support&nbsp;
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lc-block">
+          <a
+            class="btn text-white btn-lg btn-primary"
+            href="#pricing"
+            role="button"
+            >Get Started</a
+          >
         </div>
       </div>
     </div>
 
-    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <!--ABOUT SECTION-->
+    <section class=" ">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 bg-light text-center py-4">
+            <div class="lc-block mb-3">
+              <div editable="rich">
+                <h1 class="fw-bold display-1">About</h1>
+              </div>
+            </div>
+            <div class="lc-block">
+              <div editable="rich">
+                <p>
+                  Use this section to share your story, your experience, or the
+                  skills you possess.<br />This is an opportunity to create a
+                  connection with the visitor and give them<br />&nbsp;the
+                  confidence that you have the ability to provide the service
+                  they need.
+                </p>
+              </div>
+            </div>
+            <!-- /lc-block -->
+          </div>
+          <!-- /col -->
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 bg-light text-center g-0">
+            <div class="lc-block">
+              <img
+                class="img"
+                src="images/story.jpg"
+                width="100%"
+                height="600"
+                loading="lazy"
+                style="object-fit: cover; background-position: top"
+              />
+            </div>
+          </div>
+          <!-- /col -->
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container py-5">
+        <div class="row gy-5 gy-xl-0">
+          <div class="col-lg-4">
+            <div class="lc-block text-muted" style="letter-spacing: 0.7rem">
+              <div editable="rich">
+                <p>CLIENTS</p>
+              </div>
+            </div>
+            <div class="lc-block">
+              <div editable="rich">
+                <p>This is a space to list examples of some of your clients.</p>
+              </div>
+            </div>
+            <!-- /lc-block -->
+          </div>
+          <!-- /col -->
+          <div class="col-lg-4">
+            <div class="lc-block text-muted" style="letter-spacing: 0.7rem">
+              <div editable="rich">
+                <p>AWARDS</p>
+              </div>
+            </div>
+            <div class="lc-block">
+              <div editable="rich">
+                <p>
+                  Award 1: Provide details of an award you won. Award 2: Provide
+                  details of an award you won.
+                </p>
+              </div>
+            </div>
+            <!-- /lc-block -->
+          </div>
+          <!-- /col -->
+          <div class="col-lg-4">
+            <div class="lc-block text-muted" style="letter-spacing: 0.7rem">
+              <div editable="rich">
+                <p>PUBLICATIONS</p>
+              </div>
+            </div>
+            <div class="lc-block">
+              <div editable="rich">
+                <p>
+                  This is a space to list any publications your work has been
+                  featured in.
+                </p>
+              </div>
+            </div>
+            <!-- /lc-block -->
+          </div>
+          <!-- /col -->
+        </div>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer
@@ -374,7 +639,7 @@
       <!-- Section: Social media -->
 
       <!-- Section: Links  -->
-      <section class="">
+      <section>
         <div class="container text-center text-md-start mt-5">
           <!-- Grid row -->
           <div class="row mt-3">

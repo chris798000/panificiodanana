@@ -16,6 +16,10 @@
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="styles/general.css" />
     <link rel="stylesheet" href="styles/contacts.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
 
   <body style="position: relative">
@@ -152,22 +156,153 @@
     </nav>
 
     <!--HERO SECTION-->
-    <div class="container-fluid hero-section">
-      <div class="position-absolute top-50 start-50 translate-middle">
-        <h1 class="text-light text-center">La nostra storia</h1>
-        <p class="d-none d-md-block text-light text-center">
-          Fondata nel cuore della nostra comunità, la nostra panetteria crea
-          deliziosi dolci e pane da oltre due decenni. Con un impegno per la
-          qualità e la tradizione, uniamo ricette tramandate nel tempo con
-          ingredienti freschi e locali per creare sapori indimenticabili.
-        </p>
+    <!-- Full Page Image Header with Vertically Centered Content -->
+    <header
+      class="masthead"
+      style="
+        background-image: url('images/main-story.jpg');
+        margin-top: 56px;
+        height: 100vh;
+        min-height: 500px;
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+      "
+    >
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-12 text-center text-white">
+            <h1 class="fw-light">Vertically Centered Masthead Content</h1>
+            <p class="lead">A great starter layout for a landing page</p>
+          </div>
+        </div>
       </div>
-      <div class="position-absolute top-0 start-0 w-100 h-100"></div>
-      <img
-        src="images/hero-story.jpg"
-        alt="Hero"
-        class="img-fluid hero-image"
-      />
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-4 align-self-center">
+          <div class="lc-block border-top py-4" style="letter-spacing: 10px">
+            <div editable="rich">
+              <h2><strong>OUR STORY</strong></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="lc-block">
+            <div editable="rich">
+              <p>
+                <strong
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Proin faucibus porttitor dui, in vestibulum metus pulvinar sit
+                  amet. Phasellus finibus fermentum eros quis maximus. Aenean
+                  feugiat elit id quam ornare, in iaculis nunc tincidunt. Nullam
+                  pellentesque ante sit amet ipsum pulvinar, ac accumsan metus
+                  pulvinar.&nbsp;</strong
+                >
+              </p>
+            </div>
+          </div>
+          <div class="lc-block">
+            <div editable="rich">
+              <p>
+                Mauris sollicitudin, ante quis suscipit molestie, est tellus
+                semper nunc, quis porttitor tellus tortor et orci. Quisque
+                egestas gravida eros et tristique. Praesent arcu turpis, rhoncus
+                at nunc ut, ornare ultrices purus. Nullam fermentum eros eget
+                sapien dignissim eleifend. Maecenas sodales, neque vestibulum
+                aliquam varius, elit turpis tincidunt enim, eu pellentesque leo
+                ante sit amet lectus.
+              </p>
+            </div>
+          </div>
+          <div class="lc-block">
+            <div editable="rich">
+              <p>
+                <em
+                  >Pellentesque eu dolor in enim efficitur dapibus id quis nisi.
+                  Quisque interdum bibendum vulputate. Nunc dui lacus, ultrices
+                  id gravida tempor, sollicitudin dapibus nisl. Vivamus dictum
+                  quam in purus commodo molestie. Mauris ultricies tortor urna.
+                  Praesent non aliquet lectus. Sed eget massa mauris. Vestibulum
+                  euismod cursus tortor, et aliquet orci facilisis eu. Cras
+                  ultricies luctus dolor quis laoreet. Suspendisse nisi massa,
+                  feugiat in dignissim sed, fermentum sed nibh.</em
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Second section-->
+    <div class="container-fluid p-0">
+      <div class="row g-0">
+        <div
+          lc-helper="background"
+          class="col-md-6 order-md-2 ps-4 d-flex"
+          style="
+            background-size: cover;
+            background-position: center;
+            background-image: url('https://images.unsplash.com/photo-1497035111255-8bc8464dc267?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;h=768&amp;fit=crop&amp;ixid=eyJhcHBfaWQiOjM3ODR9');
+          "
+        >
+          <div class="lc-block align-self-center text-light ms-4">
+            <div editable="rich">
+              <h2 class="fw-bold display-1">
+                Any&nbsp;<br />Bold&nbsp;<br />Claim.
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 order-md-1" style="padding: 5vh 5vw">
+          <div class="lc-block mb-5">
+            <div editable="rich">
+              <p>
+                <strong
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  et metus id ligula malesuada placerat sit amet quis enim.
+                  Aliquam erat volutpat. In pellentesque scelerisque
+                  auctor.&nbsp;</strong
+                >
+              </p>
+            </div>
+          </div>
+          <!-- /lc-block -->
+          <div class="lc-block text-secondary pb-4">
+            <div editable="rich">
+              <p>
+                <em
+                  >Pellentesque habitant morbi tristique senectus et netus et
+                  malesuada fames ac turpis egestas. Vestibulum tortor quam,
+                  feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu
+                  libero sit amet quam egestas semper. Aenean ultricies mi vitae
+                  est. Mauris placerat eleifend leo. Quisque sit amet est et
+                  sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum
+                  sed, commodo vitae, ornare sit amet, wisi.&nbsp;</em
+                >
+              </p>
+            </div>
+          </div>
+          <div class="lc-block text-secondary">
+            <div editable="rich">
+              <p>
+                Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum
+                erat wisi, condimentum sed, commodo vitae, ornare sit amet,
+                wisi. Aenean fermentum, elit eget tincidunt condimentum, eros
+                ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non
+                enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus,
+                neque id cursus faucibus, tortor neque egestas augue, eu
+                vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi,
+                tincidunt quis, accumsan porttitor, facilisis luctus, metus
+              </p>
+            </div>
+          </div>
+          <!-- /lc-block -->
+        </div>
+      </div>
     </div>
 
     <!-- Footer -->
