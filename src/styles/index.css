@@ -97,18 +97,6 @@
   padding: 100px 30px;
 }
 
-.contact-section .btn {
-  border: 1px solid white;
-  background-color: white;
-  color: black;
-  border-radius: 0;
-}
-
-.contact-section .btn:nth-child(2) {
-  background-color: transparent;
-  color: white;
-}
-
 .contact-section img {
   width: 100%;
   object-fit: cover;
@@ -125,11 +113,6 @@
   border-radius: 10px;
 }
 
-.story-section .btn {
-  border: 1px solid black;
-  border-radius: 0;
-}
-
 .container-fluid.contact-section {
   padding: 100px 30px;
 }
@@ -142,9 +125,4 @@
 .story-section img {
   border-radius: 10px;
   object-fit: cover;
-}
-
-.story-section .btn {
-  border: 1px solid black;
-  border-radius: 0;
 }

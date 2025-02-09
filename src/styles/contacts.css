@@ -1,16 +1,3 @@
-.first-section .btn {
-  border: 1px solid black;
-  background-color: black;
-  color: white;
-  border-radius: 0;
-}
-
-.first-section .btn:nth-of-type(2) {
-  background-color: transparent;
-  border: 1px solid black;
-  color: black;
-}
-
 #map {
   position: relative;
 }

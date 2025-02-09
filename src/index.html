@@ -44,11 +44,49 @@
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="styles/general.css" />
     <link rel="stylesheet" href="styles/index.css" />
+
+    <style>
+      .navbar {
+        background-color: white !important;
+      }
+      .navbar .nav-link,
+      .navbar .navbar-brand {
+        color: black !important;
+      }
+      .navbar .nav-link:hover,
+      .navbar .navbar-brand:hover {
+        color: #555 !important; /* Colore del testo al passaggio del mouse */
+      }
+      .offcanvas-dark {
+        background-color: white !important;
+      }
+      .offcanvas-dark .nav-link,
+      .offcanvas-dark .navbar-brand {
+        color: black !important;
+      }
+      .offcanvas-dark .nav-link:hover,
+      .offcanvas-dark .navbar-brand:hover {
+        color: #555 !important; /* Colore del testo al passaggio del mouse */
+      }
+      .footer-section {
+        background-color: white !important;
+        color: black !important;
+      }
+      .footer-section a {
+        color: black !important;
+      }
+      .footer-section a:hover {
+        color: #555 !important; /* Colore del testo al passaggio del mouse */
+      }
+      .footer-section svg {
+        fill: black !important;
+      }
+    </style>
   </head>
 
   <body style="position: relative">
     <!--=============== NAVBAR ===============-->
-    <nav id="navbar" class="navbar navbar-dark navbar-expand-lg">
+    <nav id="navbar" class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <img
           src="images/logo.svg"
@@ -187,15 +225,17 @@
         height: 100vh;
         min-height: 500px;
         background-size: cover;
-        background-position: top;
+        background-position: center;
         background-repeat: no-repeat;
+        position: relative;
       "
     >
+      <div class="overlay"></div>
       <div class="container h-100">
         <div class="row h-100 align-items-center">
           <div class="col-12 text-center text-white">
-            <h1 class="fw-light">Vertically Centered Masthead Content</h1>
-            <p class="lead">A great starter layout for a landing page</p>
+            <h1 class="fw-bold text-shadow">Panificio da Nanà</h1>
+            <p class="lead text-shadow">Un angolo di Sicilia a Balestrate</p>
           </div>
         </div>
       </div>
@@ -207,7 +247,7 @@
         <div class="lc-block">
           <div class="lc-block mb-3">
             <div editable="rich">
-              <h1 class="fw-bold display-3">Our Services</h1>
+              <h1 class="fw-bold display-3">I più amati</h1>
             </div>
           </div>
           <div class="lc-block mb-4 col-xxl-6 mx-auto">
@@ -216,8 +256,8 @@
           <div class="lc-block">
             <div editable="rich">
               <p class="lead">
-                An overview of the services you offer and how<br />they will
-                benefit the visitor
+                Una panoramica dei prodotti che offriamo e come<br />possono
+                beneficiare i nostri clienti
               </p>
             </div>
           </div>
@@ -226,25 +266,32 @@
     </section>
     <section>
       <div class="container">
-        <div class="row align-items-center mb-5">
+        <div
+          class="row align-items-center mb-5 py-4 px-3"
+          style="
+            border-radius: 50px;
+            background: #e0e0e0;
+            box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+          "
+        >
           <div class="col-md-6 p-xxl-5">
             <div class="lc-block">
               <div editable="rich">
-                <h1 class="fw-bold">Service 1</h1>
+                <h1 class="fw-bold">Pizza</h1>
               </div>
             </div>
             <!-- /lc-block -->
-            <div class="lc-block">
+            <div class="lc-block mb-4">
               <div editable="rich">
                 <p>
-                  A short paragraph describing exactly what this service offers
-                  and how it helps clients. This is your chance to convince the
-                  visitor that your business is the right choice for them.
+                  La nostra pizza è preparata con ingredienti freschi e di alta
+                  qualità, seguendo la tradizione siciliana. Ogni morso offre
+                  un'esplosione di sapori autentici che delizieranno il tuo
+                  palato. Perfetta per ogni occasione, la nostra pizza è amata
+                  da tutti.
                 </p>
 
-                <a class="btn btn-primary" href="#" role="button"
-                  >Scopri di più</a
-                >
+                <a class="btn" href="#" role="button">Scopri di più</a>
               </div>
             </div>
             <!-- /lc-block -->
@@ -252,63 +299,41 @@
           <!-- /col -->
           <div class="col-md-6">
             <div class="lc-block">
-              <img class="img-fluid" src="images/pizza.jpg" />
+              <img
+                class="img-fluid"
+                src="images/pizza.jpg"
+                style="border-radius: 50px"
+              />
             </div>
             <!-- /lc-block -->
           </div>
           <!-- /col -->
         </div>
-        <div class="row align-items-center mb-5">
-          <div class="col-md-6 p-xxl-5 order-md-2">
-            <div class="lc-block">
-              <div editable="rich">
-                <h1 class="fw-bold">Service 2</h1>
-              </div>
-            </div>
-            <!-- /lc-block -->
-            <div class="lc-block">
-              <div editable="rich">
-                <p>
-                  A short paragraph describing exactly what this service offers
-                  and how it helps clients. This is your chance to convince the
-                  visitor that your business is the right choice for them.
-                </p>
-
-                <a class="btn btn-primary" href="#" role="button"
-                  >Scopri di più</a
-                >
-              </div>
-            </div>
-            <!-- /lc-block -->
-          </div>
-          <!-- /col -->
-          <div class="col-md-6">
-            <div class="lc-block">
-              <img class="img-fluid" src="images/pane.jpg" />
-            </div>
-            <!-- /lc-block -->
-          </div>
-          <!-- /col -->
-        </div>
-        <div class="row align-items-center mb-5">
+        <div
+          class="row align-items-center mb-5 py-4 px-3 flex-row-reverse"
+          style="
+            border-radius: 50px;
+            background: #e0e0e0;
+            box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+          "
+        >
           <div class="col-md-6 p-xxl-5">
             <div class="lc-block">
               <div editable="rich">
-                <h1 class="fw-bold">Service 3</h1>
+                <h1 class="fw-bold">Sfincione</h1>
               </div>
             </div>
             <!-- /lc-block -->
-            <div class="lc-block">
+            <div class="lc-block mb-4">
               <div editable="rich">
                 <p>
-                  A short paragraph describing exactly what this service offers
-                  and how it helps clients. This is your chance to convince the
-                  visitor that your business is the right choice for them.
+                  Il nostro sfincione è una focaccia soffice e gustosa, condita
+                  con pomodoro, cipolla, acciughe e formaggio. Un classico della
+                  tradizione palermitana, perfetto per ogni momento della
+                  giornata.
                 </p>
 
-                <a class="btn btn-primary" href="#" role="button"
-                  >Scopri di più</a
-                >
+                <a class="btn" href="#" role="button">Scopri di più</a>
               </div>
             </div>
             <!-- /lc-block -->
@@ -316,31 +341,40 @@
           <!-- /col -->
           <div class="col-md-6">
             <div class="lc-block">
-              <img class="img-fluid" src="images/sfincione.jpg" />
+              <img
+                class="img-fluid"
+                src="images/sfincione.jpg"
+                style="border-radius: 50px"
+              />
             </div>
             <!-- /lc-block -->
           </div>
           <!-- /col -->
         </div>
-        <div class="row align-items-center mb-5">
-          <div class="col-md-6 p-xxl-5 order-md-2">
+        <div
+          class="row align-items-center mb-5 py-4 px-3"
+          style="
+            border-radius: 50px;
+            background: #e0e0e0;
+            box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+          "
+        >
+          <div class="col-md-6 p-xxl-5">
             <div class="lc-block">
               <div editable="rich">
-                <h1 class="fw-bold">Service 4</h1>
+                <h1 class="fw-bold">Pane</h1>
               </div>
             </div>
             <!-- /lc-block -->
-            <div class="lc-block">
+            <div class="lc-block mb-4">
               <div editable="rich">
                 <p>
-                  A short paragraph describing exactly what this service offers
-                  and how it helps clients. This is your chance to convince the
-                  visitor that your business is the right choice for them.
+                  Il nostro pane è fatto con farine selezionate e lievito madre,
+                  garantendo freschezza e sapore autentico. Perfetto per ogni
+                  pasto, è un elemento essenziale della nostra tradizione.
                 </p>
 
-                <a class="btn btn-primary" href="#" role="button"
-                  >Scopri di più</a
-                >
+                <a class="btn" href="#" role="button">Scopri di più</a>
               </div>
             </div>
             <!-- /lc-block -->
@@ -348,7 +382,52 @@
           <!-- /col -->
           <div class="col-md-6">
             <div class="lc-block">
-              <img class="img-fluid" src="images/biscotti.jpg" />
+              <img
+                class="img-fluid"
+                src="images/pane.jpg"
+                style="border-radius: 50px"
+              />
+            </div>
+            <!-- /lc-block -->
+          </div>
+          <!-- /col -->
+        </div>
+        <div
+          class="row align-items-center mb-5 py-4 px-3 flex-row-reverse"
+          style="
+            border-radius: 50px;
+            background: #e0e0e0;
+            box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+          "
+        >
+          <div class="col-md-6 p-xxl-5">
+            <div class="lc-block">
+              <div editable="rich">
+                <h1 class="fw-bold">Biscotti</h1>
+              </div>
+            </div>
+            <!-- /lc-block -->
+            <div class="lc-block mb-4">
+              <div editable="rich">
+                <p>
+                  I nostri biscotti sono realizzati con ingredienti genuini e
+                  seguendo ricette tradizionali. Perfetti per accompagnare il tè
+                  o il caffè, sono amati da grandi e piccini.
+                </p>
+
+                <a class="btn" href="#" role="button">Scopri di più</a>
+              </div>
+            </div>
+            <!-- /lc-block -->
+          </div>
+          <!-- /col -->
+          <div class="col-md-6">
+            <div class="lc-block">
+              <img
+                class="img-fluid"
+                src="images/biscotti.jpg"
+                style="border-radius: 50px"
+              />
             </div>
             <!-- /lc-block -->
           </div>
@@ -357,137 +436,24 @@
       </div>
     </section>
 
-    <!--CONTACT SECTION-->
-    <div class="container text-center py-4">
-      <div class="lc-block card border-0 text-center rounded p-4 p-lg-6">
-        <div class="row card-body mb-3 mb-lg-4">
-          <div class="col-xl-11 col-xxl-10 mx-auto">
-            <div class="lc-block mb-5">
-              <p class="text-uppercase" editable="inline">
-                Ready to speed up your Work?
-              </p>
-              <h3 editable="inline" class="fw-bold display-2">
-                Sign up for our <span class="text-primary">Brand</span> today
-              </h3>
-            </div>
-
-            <div class="lc-block mb-4">
-              <div class="d-flex flex-wrap justify-content-center gap-3">
-                <div class="d-inline-flex gap-1 lc-block">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="2em"
-                    height="2em"
-                    fill="currentColor"
-                    class="text-primary my-auto flex-shrink-0"
-                    viewBox="0 0 16 16"
-                    lc-helper="svg-icon"
-                  >
-                    <path
-                      d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"
-                    ></path>
-                    <path
-                      d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"
-                    ></path>
-                  </svg>
-                  <p editable="inline" class="lead my-auto">
-                    30-Day Money-Back Guarantee
-                  </p>
-                </div>
-                <div class="d-inline-flex gap-1 lc-block">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="2em"
-                    height="2em"
-                    fill="currentColor"
-                    class="text-primary my-auto flex-shrink-0"
-                    viewBox="0 0 16 16"
-                    lc-helper="svg-icon"
-                  >
-                    <path
-                      d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"
-                    ></path>
-                    <path
-                      d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"
-                    ></path>
-                  </svg>
-                  <p editable="inline" class="lead my-auto">
-                    No credit card required
-                  </p>
-                </div>
-                <div class="d-inline-flex gap-1 lc-block">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="2em"
-                    height="2em"
-                    fill="currentColor"
-                    class="text-primary my-auto flex-shrink-0"
-                    viewBox="0 0 16 16"
-                    lc-helper="svg-icon"
-                  >
-                    <path
-                      d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"
-                    ></path>
-                    <path
-                      d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"
-                    ></path>
-                  </svg>
-                  <p editable="inline" class="lead my-auto">100% uptime</p>
-                </div>
-                <div class="d-inline-flex gap-1 lc-block">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="2em"
-                    height="2em"
-                    fill="currentColor"
-                    class="text-primary my-auto flex-shrink-0"
-                    viewBox="0 0 16 16"
-                    lc-helper="svg-icon"
-                  >
-                    <path
-                      d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"
-                    ></path>
-                    <path
-                      d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"
-                    ></path>
-                  </svg>
-                  <p editable="inline" class="lead my-auto">
-                    First class support&nbsp;
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="lc-block">
-          <a
-            class="btn text-white btn-lg btn-primary"
-            href="#pricing"
-            role="button"
-            >Get Started</a
-          >
-        </div>
-      </div>
-    </div>
-
     <!--ABOUT SECTION-->
-    <section class=" ">
+    <section>
       <div class="container">
         <div class="row">
           <div class="col-md-12 bg-light text-center py-4">
             <div class="lc-block mb-3">
               <div editable="rich">
-                <h1 class="fw-bold display-1">About</h1>
+                <h1 class="fw-bold display-1">Chi Siamo</h1>
               </div>
             </div>
             <div class="lc-block">
               <div editable="rich">
                 <p>
-                  Use this section to share your story, your experience, or the
-                  skills you possess.<br />This is an opportunity to create a
-                  connection with the visitor and give them<br />&nbsp;the
-                  confidence that you have the ability to provide the service
-                  they need.
+                  Il Panificio da Nanà nasce dalla passione per la tradizione
+                  siciliana e l'amore per i prodotti artigianali. Da
+                  generazioni, offriamo ai nostri clienti pane, dolci e
+                  specialità che raccontano la storia e i sapori della nostra
+                  terra.
                 </p>
               </div>
             </div>
@@ -519,28 +485,14 @@
           <div class="col-lg-4">
             <div class="lc-block text-muted" style="letter-spacing: 0.7rem">
               <div editable="rich">
-                <p>CLIENTS</p>
-              </div>
-            </div>
-            <div class="lc-block">
-              <div editable="rich">
-                <p>This is a space to list examples of some of your clients.</p>
-              </div>
-            </div>
-            <!-- /lc-block -->
-          </div>
-          <!-- /col -->
-          <div class="col-lg-4">
-            <div class="lc-block text-muted" style="letter-spacing: 0.7rem">
-              <div editable="rich">
-                <p>AWARDS</p>
+                <p>CLIENTI</p>
               </div>
             </div>
             <div class="lc-block">
               <div editable="rich">
                 <p>
-                  Award 1: Provide details of an award you won. Award 2: Provide
-                  details of an award you won.
+                  Siamo orgogliosi di servire una vasta gamma di clienti, dai
+                  residenti locali ai turisti che visitano Balestrate.
                 </p>
               </div>
             </div>
@@ -550,14 +502,31 @@
           <div class="col-lg-4">
             <div class="lc-block text-muted" style="letter-spacing: 0.7rem">
               <div editable="rich">
-                <p>PUBLICATIONS</p>
+                <p>DAL 1970</p>
               </div>
             </div>
             <div class="lc-block">
               <div editable="rich">
                 <p>
-                  This is a space to list any publications your work has been
-                  featured in.
+                  Dal 1970, portiamo avanti la tradizione e la qualità dei
+                  nostri prodotti artigianali.
+                </p>
+              </div>
+            </div>
+            <!-- /lc-block -->
+          </div>
+          <!-- /col -->
+          <div class="col-lg-4">
+            <div class="lc-block text-muted" style="letter-spacing: 0.7rem">
+              <div editable="rich">
+                <p>PREMI</p>
+              </div>
+            </div>
+            <div class="lc-block">
+              <div editable="rich">
+                <p>
+                  Abbiamo vinto il premio Gambero Rosso per la qualità dei
+                  nostri prodotti artigianali.
                 </p>
               </div>
             </div>
@@ -568,14 +537,48 @@
       </div>
     </section>
 
+    <!--CONTACT SECTION-->
+
+    <div
+      class="container text-center py-4 py-md-6 px-0"
+      style="
+        border-radius: 50px;
+        background: #e0e0e0;
+        box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+      "
+    >
+      <div class="lc-block border-0 text-center p-4 p-lg-6">
+        <div class="row mb-3 mb-lg-4">
+          <div class="col-xl-11 col-xxl-9 mx-auto">
+            <div class="lc-block mb-4">
+              <div editable="rich">
+                <p class="text-uppercase">Raggiungici al piu presto!</p>
+              </div>
+            </div>
+            <div class="lc-block">
+              <div editable="rich">
+                <h3 class="fw-bold display-6">
+                  Serviamo i nostri clienti con passione e dedizione da oltre 50
+                  anni.
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lc-block">
+          <a class="btn btn-lg" href="#" role="button">Dove trovarci</a>
+        </div>
+      </div>
+    </div>
+
     <!-- Footer -->
     <footer
       class="container-fluid text-center text-lg-start text-white footer-section p-0"
     >
       <!-- Section: Social media -->
       <section
-        class="d-flex justify-content-between p-4 text-white"
-        style="background-color: rgba(0, 63, 13, 0.2)"
+        class="d-flex justify-content-between p-4"
+        style="background-color: rgba(0, 0, 0, 0.2)"
       >
         <!-- Left -->
         <div class="d-none d-md-block me-5">
@@ -669,30 +672,19 @@
                 style="width: 60px; background-color: #7c4dff; height: 2px"
               />
               <p>
-                <a href="index.html" class="text-white" data-translate="home"
-                  >Home</a
-                >
+                <a href="index.html" data-translate="home">Home</a>
               </p>
               <p>
-                <a
-                  href="contacts.html"
-                  class="text-white"
-                  data-translate="contacts"
-                  >Contatti</a
-                >
+                <a href="contacts.html" data-translate="contacts">Contatti</a>
               </p>
               <p>
-                <a href="story.html" class="text-white" data-translate="history"
-                  >Storia</a
-                >
+                <a href="story.html" data-translate="history">Storia</a>
               </p>
               <p>
-                <a href="#!" class="text-white" data-translate="ingredients"
-                  >Ingredienti</a
-                >
+                <a href="#!" data-translate="ingredients">Ingredienti</a>
               </p>
               <p>
-                <a href="#!" class="text-white" data-translate="alsoFind"
+                <a href="#!" data-translate="alsoFind"
                   >Da noi puoi trovare anche</a
                 >
               </p>
@@ -710,25 +702,19 @@
                 style="width: 60px; background-color: #7c4dff; height: 2px"
               />
               <p>
-                <a href="#!" class="text-white" data-translate="sfincione"
-                  >Sfincione</a
-                >
+                <a href="#!" data-translate="sfincione">Sfincione</a>
               </p>
               <p>
-                <a href="#!" class="text-white" data-translate="pizza">Pizza</a>
+                <a href="#!" data-translate="pizza">Pizza</a>
               </p>
               <p>
-                <a href="#!" class="text-white" data-translate="focacce"
-                  >Focacce</a
-                >
+                <a href="#!" data-translate="focacce">Focacce</a>
               </p>
               <p>
-                <a href="#!" class="text-white" data-translate="biscotti"
-                  >Biscotti</a
-                >
+                <a href="#!" data-translate="biscotti">Biscotti</a>
               </p>
               <p>
-                <a href="#!" class="text-white" data-translate="pane">Pane</a>
+                <a href="#!" data-translate="pane">Pane</a>
               </p>
             </div>
             <!-- Grid column -->
@@ -744,14 +730,12 @@
                 style="width: 60px; background-color: #7c4dff; height: 2px"
               />
               <p>
-                <a href="#!" class="text-white" data-translate="carbone"
+                <a href="#!" data-translate="carbone"
                   >Carbone e buccia di mandorla</a
                 >
               </p>
               <p>
-                <a href="#!" class="text-white" data-translate="lievito"
-                  >Lievito madre vivo</a
-                >
+                <a href="#!" data-translate="lievito">Lievito madre vivo</a>
               </p>
             </div>
             <!-- Grid column -->
@@ -764,10 +748,10 @@
       <!-- Copyright -->
       <div
         class="text-center p-3"
-        style="background-color: rgba(0, 63, 13, 0.2)"
+        style="background-color: rgba(0, 0, 0, 0.366)"
       >
         © 2025 Copyright:
-        <a class="text-white" href="#">Panificio da Nanà</a>
+        <a href="#">Panificio da Nanà</a>
       </div>
       <!-- Copyright -->
     </footer>
