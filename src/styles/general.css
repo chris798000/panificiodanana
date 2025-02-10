@@ -228,6 +228,7 @@ body {
 .button-fade {
   margin: 0;
   --color: var(--bs-primary);
+  font-family: inherit;
   display: inline-block;
   width: 8em;
   height: 2.6em;
@@ -247,8 +248,8 @@ body {
   position: absolute;
   z-index: -1;
   background: var(--color);
-  height: 125px;
-  width: auto;
+  height: 100px;
+  width: 175px;
   border-radius: 50%;
 }
 
