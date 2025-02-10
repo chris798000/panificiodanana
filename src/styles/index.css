@@ -126,3 +126,19 @@
   border-radius: 10px;
   object-fit: cover;
 }
+
+#story-button {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  #story-button {
+    width: 75%;
+  }
+}
+
+@media (min-width: 992px) {
+  #story-button {
+    width: 50%;
+  }
+}
