@@ -24,10 +24,10 @@
 
   <body style="position: relative">
     <!--=============== NAVBAR ===============-->
-    <nav id="navbar" class="navbar navbar-dark navbar-expand-lg">
+    <nav id="navbar" class="navbar navbar-light navbar-expand-lg">
       <div class="container-fluid">
         <img
-          src="images/logo.svg"
+          src="images/logo-black.svg"
           alt="Logo"
           width="40"
           height="40"
@@ -45,7 +45,7 @@
         </button>
 
         <div
-          class="offcanvas offcanvas-dark offcanvas-start d-lg-none"
+          class="offcanvas offcanvas-light offcanvas-start d-lg-none"
           data-bs-scroll="true"
           tabindex="-1"
           id="offcanvasWithBothOptions"
@@ -172,8 +172,10 @@
       <div class="container h-100">
         <div class="row h-100 align-items-center">
           <div class="col-12 text-center text-white">
-            <h1 class="fw-light">Vertically Centered Masthead Content</h1>
-            <p class="lead">A great starter layout for a landing page</p>
+            <h1 class="fw-bold">La nostra storia</h1>
+            <p class="lead">
+              Un viaggio attraverso la nostra tradizione e passione
+            </p>
           </div>
         </div>
       </div>
@@ -185,7 +187,7 @@
         <div class="col-md-4 align-self-center">
           <div class="lc-block border-top py-4" style="letter-spacing: 10px">
             <div editable="rich">
-              <h2><strong>OUR STORY</strong></h2>
+              <h2 class="text-uppercase"><strong>La nostra storia</strong></h2>
             </div>
           </div>
         </div>
@@ -311,8 +313,8 @@
     >
       <!-- Section: Social media -->
       <section
-        class="d-flex justify-content-between p-4 text-white"
-        style="background-color: rgba(0, 63, 13, 0.2)"
+        class="d-flex justify-content-between p-4"
+        style="background-color: rgba(0, 0, 0, 0.2)"
       >
         <!-- Left -->
         <div class="d-none d-md-block me-5">
@@ -334,6 +336,7 @@
               width="16"
               height="16"
               fill="currentColor"
+              class="bi bi-whatsapp"
               viewBox="0 0 16 16"
             >
               <path
@@ -347,6 +350,7 @@
               width="16"
               height="16"
               fill="currentColor"
+              class="bi bi-facebook"
               viewBox="0 0 16 16"
             >
               <path
@@ -360,6 +364,7 @@
               width="16"
               height="16"
               fill="currentColor"
+              class="bi bi-instagram"
               viewBox="0 0 16 16"
             >
               <path
@@ -373,7 +378,7 @@
       <!-- Section: Social media -->
 
       <!-- Section: Links  -->
-      <section class="">
+      <section>
         <div class="container text-center text-md-start mt-5">
           <!-- Grid row -->
           <div class="row mt-3">
@@ -403,30 +408,19 @@
                 style="width: 60px; background-color: #7c4dff; height: 2px"
               />
               <p>
-                <a href="index.html" class="text-white" data-translate="home"
-                  >Home</a
-                >
+                <a href="index.html" data-translate="home">Home</a>
               </p>
               <p>
-                <a
-                  href="contacts.html"
-                  class="text-white"
-                  data-translate="contacts"
-                  >Contatti</a
-                >
+                <a href="contacts.html" data-translate="contacts">Contatti</a>
               </p>
               <p>
-                <a href="story.html" class="text-white" data-translate="history"
-                  >Storia</a
-                >
+                <a href="story.html" data-translate="history">Storia</a>
               </p>
               <p>
-                <a href="#!" class="text-white" data-translate="ingredients"
-                  >Ingredienti</a
-                >
+                <a href="#!" data-translate="ingredients">Ingredienti</a>
               </p>
               <p>
-                <a href="#!" class="text-white" data-translate="alsoFind"
+                <a href="#!" data-translate="alsoFind"
                   >Da noi puoi trovare anche</a
                 >
               </p>
@@ -444,25 +438,19 @@
                 style="width: 60px; background-color: #7c4dff; height: 2px"
               />
               <p>
-                <a href="#!" class="text-white" data-translate="sfincione"
-                  >Sfincione</a
-                >
+                <a href="#!" data-translate="sfincione">Sfincione</a>
               </p>
               <p>
-                <a href="#!" class="text-white" data-translate="pizza">Pizza</a>
+                <a href="#!" data-translate="pizza">Pizza</a>
               </p>
               <p>
-                <a href="#!" class="text-white" data-translate="focacce"
-                  >Focacce</a
-                >
+                <a href="#!" data-translate="focacce">Focacce</a>
               </p>
               <p>
-                <a href="#!" class="text-white" data-translate="biscotti"
-                  >Biscotti</a
-                >
+                <a href="#!" data-translate="biscotti">Biscotti</a>
               </p>
               <p>
-                <a href="#!" class="text-white" data-translate="pane">Pane</a>
+                <a href="#!" data-translate="pane">Pane</a>
               </p>
             </div>
             <!-- Grid column -->
@@ -478,14 +466,12 @@
                 style="width: 60px; background-color: #7c4dff; height: 2px"
               />
               <p>
-                <a href="#!" class="text-white" data-translate="carbone"
+                <a href="#!" data-translate="carbone"
                   >Carbone e buccia di mandorla</a
                 >
               </p>
               <p>
-                <a href="#!" class="text-white" data-translate="lievito"
-                  >Lievito madre vivo</a
-                >
+                <a href="#!" data-translate="lievito">Lievito madre vivo</a>
               </p>
             </div>
             <!-- Grid column -->
@@ -498,10 +484,10 @@
       <!-- Copyright -->
       <div
         class="text-center p-3"
-        style="background-color: rgba(0, 63, 13, 0.2)"
+        style="background-color: rgba(0, 0, 0, 0.366)"
       >
         © 2025 Copyright:
-        <a class="text-white" href="#">Panificio da Nanà</a>
+        <a href="#">Panificio da Nanà</a>
       </div>
       <!-- Copyright -->
     </footer>
