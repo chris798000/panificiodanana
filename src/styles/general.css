@@ -87,6 +87,14 @@ body {
   }
 }
 
+.nav-link {
+  opacity: 0.7;
+}
+
+nav .nav-link.active {
+  opacity: 1;
+}
+
 /* LANGUAGE SELECTOR */
 
 #language-selector {
@@ -104,7 +112,7 @@ body {
   color: #fff;
   border: none;
   padding: 10px;
-  background-color: #000000;
+  background-color: rgb(33, 37, 41);
 }
 
 #language-menu {
@@ -186,44 +194,6 @@ body {
   background-repeat: no-repeat;
 }
 
-.btn-fade {
-  color: var(--bs-primary);
-  text-transform: uppercase;
-  text-decoration: none;
-  border: 1px solid var(--bs-primary);
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  font-weight: bold;
-  background: transparent;
-  position: relative;
-  transition: all 1s;
-  overflow: hidden;
-  border-radius: 5px;
-}
-
-.btn-fade:hover {
-  color: white;
-  background-color: var(--bs-primary);
-}
-
-.btn::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 0%;
-  top: 0;
-  left: -40px;
-  transform: skewX(45deg);
-  background-color: var(--bs-primary);
-  z-index: -1;
-  transition: all 1s;
-}
-
-.btn-fade:hover::before {
-  width: 160%;
-}
-
 .overlay {
   position: absolute;
   top: 0;
@@ -254,3 +224,106 @@ body {
   box-sizing: inherit;
 }
 
+/* From Uiverse.io by cssbus-io */
+.button-fade {
+  margin: 0;
+  --color: var(--bs-primary);
+  font-family: inherit;
+  display: inline-block;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border: 1px solid var(--bs-primary);
+  transition: color 0.5s;
+  z-index: 1;
+  font-weight: 700;
+  background-color: #e0e0e0;
+}
+
+.button-fade:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.button-fade:hover {
+  color: #fff;
+}
+
+.button-fade:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+.button-fade:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+.button-fade:active:before {
+  background: var(--bs-primary);
+  transition: background 0s;
+}
+
+/* From Uiverse.io by adamgiebl */
+.cssbuttons-io-button {
+  background: rgb(33, 37, 41);
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em rgb(33, 37, 41);
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em rgb(33, 37, 41);
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: rgb(33, 37, 41);
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
