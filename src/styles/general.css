@@ -242,19 +242,13 @@ body {
   background-color: #e0e0e0;
 }
 
-@media (max-width: 768px) {
-  .button-fade {
-    font-size: 15px;
-  }
-}
-
 .button-fade:before {
   content: "";
   position: absolute;
   z-index: -1;
   background: var(--color);
   height: 125px;
-  width: 200px;
+  width: auto;
   border-radius: 50%;
 }
 
