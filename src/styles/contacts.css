@@ -39,3 +39,11 @@
   height: 24px;
   margin-right: 10px;
 }
+
+#open-hours table tbody tr:nth-child(odd) {
+  background-color: #f2f2f2; /* Adjust the color as needed */
+}
+
+#open-hours table tbody td {
+  vertical-align: middle; /* Allinea verticalmente al centro */
+}

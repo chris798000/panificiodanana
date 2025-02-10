@@ -117,7 +117,7 @@ nav .nav-link.active {
 
 #language-menu {
   display: none;
-  background-color: #000000;
+  background-color: rgb(33, 37, 41);
   border-radius: 30px;
   padding: 10px;
   margin-top: 5px;
@@ -248,8 +248,8 @@ body {
   position: absolute;
   z-index: -1;
   background: var(--color);
-  height: 150px;
-  width: 200px;
+  height: 100px;
+  width: 175px;
   border-radius: 50%;
 }
 
