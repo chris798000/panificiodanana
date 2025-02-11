@@ -640,10 +640,9 @@
     <!--CONTACT SECTION-->
     <section>
       <div
-        class="d-flex text-center min-vh-50 mt-5 position-relative"
+        class="d-flex text-center min-vh-50 mt-5 position-relative contact-section"
         lc-helper="background"
         style="
-          background-attachment: fixed;
           background-size: cover;
           background-position: center center;
           background-color: #eee;
@@ -699,6 +698,18 @@
         ></div>
       </div>
     </section>
+
+    <style>
+      .contact-section {
+        background-attachment: fixed;
+      }
+
+      @media (max-width: 768px) {
+        .contact-section {
+          background-attachment: scroll;
+        }
+      }
+    </style>
 
     <!-- Footer -->
     <footer
