@@ -21,6 +21,19 @@ a {
   color: black;
 }
 
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-item.active {
+  background-color: #f8f9fa;
+}
+
+h1 {
+  letter-spacing: 0.07em;
+}
+
 /* end typo */
 
 .navbar {

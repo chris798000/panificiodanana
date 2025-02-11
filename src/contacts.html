@@ -24,7 +24,7 @@
 
   <body style="position: relative">
     <!--=============== NAVBAR ===============-->
-    <nav id="navbar" class="navbar navbar-light navbar-expand-lg">
+    <nav id="navbar" class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <img
           src="images/logo-black.svg"
@@ -33,7 +33,7 @@
           height="40"
           class="d-inline-block align-text-top me-lg-2"
         />
-        <a class="navbar-brand" href="#"> Panificio da Nanà </a>
+        <a class="navbar-brand" href="index.html"> Panificio da Nanà </a>
         <button
           class="btn d-lg-none"
           type="button"
@@ -45,7 +45,7 @@
         </button>
 
         <div
-          class="offcanvas offcanvas-light offcanvas-start d-lg-none"
+          class="offcanvas offcanvas-dark offcanvas-start d-lg-none"
           data-bs-scroll="true"
           tabindex="-1"
           id="offcanvasWithBothOptions"
@@ -66,7 +66,7 @@
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a
-                  class="nav-link"
+                  class="nav-link active"
                   aria-current="page"
                   href="index.html"
                   data-translate="home"
@@ -75,7 +75,7 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link active"
+                  class="nav-link"
                   href="contacts.html"
                   data-translate="contacts"
                   >Contatti</a
@@ -87,22 +87,70 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" data-translate="ingredients"
+                <a
+                  class="nav-link"
+                  href="ingredienti.html"
+                  data-translate="ingredients"
                   >Ingredienti</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" data-translate="specialties"
+                <a
+                  class="nav-link"
+                  href="specialita.html"
+                  data-translate="specialties"
                   >Specialità</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" data-translate="favorites"
-                  >I più amati</a
+              <div class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
                 >
-              </li>
+                  I più amati
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="nav-link dropdown-item px-3"
+                      data-translate="pizza"
+                      href="pizza.html"
+                      >Pizza</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="nav-link dropdown-item px-3"
+                      data-translate="sfincione"
+                      href="sfincone.html"
+                      >Sfincione</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="nav-link dropdown-item px-3"
+                      data-translate="pane"
+                      href="pane.html"
+                      >Pane</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="nav-link dropdown-item px-3"
+                      data-translate="biscotti"
+                      href="biscotti.html"
+                      >Biscotti</a
+                    >
+                  </li>
+                </ul>
+              </div>
               <li class="nav-item">
-                <a class="nav-link" href="#" data-translate="alsoFind"
+                <a
+                  class="nav-link"
+                  href="puoi-trovare.html"
+                  data-translate="alsoFind"
                   >Da noi puoi trovare anche</a
                 >
               </li>
@@ -113,7 +161,7 @@
           <ul class="navbar-nav">
             <li class="nav-item text-caption">
               <a
-                class="nav-link"
+                class="nav-link active"
                 aria-current="page"
                 href="index.html"
                 data-translate="home"
@@ -121,10 +169,7 @@
               >
             </li>
             <li class="nav-item text-caption">
-              <a
-                class="nav-link active"
-                href="contacts.html"
-                data-translate="contacts"
+              <a class="nav-link" href="contacts.html" data-translate="contacts"
                 >Contatti</a
               >
             </li>
@@ -134,22 +179,70 @@
               >
             </li>
             <li class="nav-item text-caption">
-              <a class="nav-link" href="#" data-translate="ingredients"
+              <a
+                class="nav-link"
+                href="ingredienti.html"
+                data-translate="ingredients"
                 >Ingredienti</a
               >
             </li>
             <li class="nav-item text-caption">
-              <a class="nav-link" href="#" data-translate="specialties"
+              <a
+                class="nav-link"
+                href="specialita.html"
+                data-translate="specialties"
                 >Specialità</a
               >
             </li>
-            <li class="nav-item text-caption">
-              <a class="nav-link" href="#" data-translate="favorites"
-                >I più amati</a
+            <div class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
-            </li>
+                I più amati
+              </a>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="nav-link dropdown-item px-3"
+                    data-translate="pizza"
+                    href="pizza.html"
+                    >Pizza</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="nav-link dropdown-item px-3"
+                    data-translate="sfincione"
+                    href="sfincione.html"
+                    >Sfincione</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="nav-link dropdown-item px-3"
+                    data-translate="pane"
+                    href="pane.html"
+                    >Pane</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="nav-link dropdown-item px-3"
+                    data-translate="biscotti"
+                    href="biscotti.html"
+                    >Biscotti</a
+                  >
+                </li>
+              </ul>
+            </div>
             <li class="nav-item text-caption">
-              <a class="nav-link" href="#" data-translate="alsoFind"
+              <a
+                class="nav-link"
+                href="puoi-trovare.html"
+                data-translate="alsoFind"
                 >Da noi puoi trovare anche</a
               >
             </li>
@@ -457,10 +550,12 @@
                 <a href="story.html" data-translate="history">Storia</a>
               </p>
               <p>
-                <a href="#!" data-translate="ingredients">Ingredienti</a>
+                <a href="ingredienti.html" data-translate="ingredients"
+                  >Ingredienti</a
+                >
               </p>
               <p>
-                <a href="#!" data-translate="alsoFind"
+                <a href="puoi-trovare.html" data-translate="alsoFind"
                   >Da noi puoi trovare anche</a
                 >
               </p>
@@ -478,19 +573,21 @@
                 style="width: 60px; background-color: #7c4dff; height: 2px"
               />
               <p>
-                <a href="#!" data-translate="sfincione">Sfincione</a>
+                <a href="sfincione.html" data-translate="sfincione"
+                  >Sfincione</a
+                >
               </p>
               <p>
-                <a href="#!" data-translate="pizza">Pizza</a>
+                <a href="pizza.html" data-translate="pizza">Pizza</a>
               </p>
               <p>
-                <a href="#!" data-translate="focacce">Focacce</a>
+                <a href="focacce.html" data-translate="focacce">Focacce</a>
               </p>
               <p>
-                <a href="#!" data-translate="biscotti">Biscotti</a>
+                <a href="biscotti.html" data-translate="biscotti">Biscotti</a>
               </p>
               <p>
-                <a href="#!" data-translate="pane">Pane</a>
+                <a href="pane.html" data-translate="pane">Pane</a>
               </p>
             </div>
             <!-- Grid column -->
@@ -506,12 +603,14 @@
                 style="width: 60px; background-color: #7c4dff; height: 2px"
               />
               <p>
-                <a href="#!" data-translate="carbone"
+                <a href="carbone.html" data-translate="carbone"
                   >Carbone e buccia di mandorla</a
                 >
               </p>
               <p>
-                <a href="#!" data-translate="lievito">Lievito madre vivo</a>
+                <a href="lievito.html" data-translate="lievito"
+                  >Lievito madre vivo</a
+                >
               </p>
             </div>
             <!-- Grid column -->
