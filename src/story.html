@@ -66,7 +66,7 @@
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a
-                  class="nav-link active"
+                  class="nav-link"
                   aria-current="page"
                   href="index.html"
                   data-translate="home"
@@ -82,7 +82,10 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="story.html" data-translate="history"
+                <a
+                  class="nav-link active"
+                  href="story.html"
+                  data-translate="history"
                   >Storia</a
                 >
               </li>
@@ -94,14 +97,34 @@
                   >Ingredienti</a
                 >
               </li>
-              <li class="nav-item">
+              <div class="nav-item dropdown">
                 <a
-                  class="nav-link"
-                  href="specialita.html"
-                  data-translate="specialties"
-                  >Specialità</a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
                 >
-              </li>
+                  Specialità
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="nav-link dropdown-item px-3"
+                      data-translate="carbone"
+                      href="carbone.html"
+                      >Carbone e Buccia di mandorla</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="nav-link dropdown-item px-3"
+                      data-translate="lievito"
+                      href="lievito.html"
+                      >Lievito madre vivo</a
+                    >
+                  </li>
+                </ul>
+              </div>
               <div class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -161,7 +184,7 @@
           <ul class="navbar-nav">
             <li class="nav-item text-caption">
               <a
-                class="nav-link active"
+                class="nav-link"
                 aria-current="page"
                 href="index.html"
                 data-translate="home"
@@ -174,7 +197,10 @@
               >
             </li>
             <li class="nav-item text-caption">
-              <a class="nav-link" href="story.html" data-translate="history"
+              <a
+                class="nav-link active"
+                href="story.html"
+                data-translate="history"
                 >Storia</a
               >
             </li>
@@ -186,14 +212,34 @@
                 >Ingredienti</a
               >
             </li>
-            <li class="nav-item text-caption">
+            <div class="nav-item dropdown">
               <a
-                class="nav-link"
-                href="specialita.html"
-                data-translate="specialties"
-                >Specialità</a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
-            </li>
+                Specialità
+              </a>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="nav-link dropdown-item px-3"
+                    data-translate="carbone"
+                    href="carbone.html"
+                    >Carbone e Buccia di mandorla</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="nav-link dropdown-item px-3"
+                    data-translate="lievito"
+                    href="lievito.html"
+                    >Lievito madre vivo</a
+                  >
+                </li>
+              </ul>
+            </div>
             <div class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -302,12 +348,13 @@
             <div editable="rich">
               <p>
                 <strong
-                  >La storia della panificazione attraversa questo luogo da più
-                  di un secolo. Il forno a legna risale alla prima metà del
-                  '900. La Famigla Oliva inizia la sua attività nel 1978.
-                  Leonardo Oliva, detto Nanà, mantiene le vecchie tradizioni
-                  alimentando il forno con "bucce" di mandorle e utilizzando il
-                  lievito madre per il suo profumatissimo pane.&nbsp;</strong
+                  >Nel cuore di Balestrate, piccolo comune affacciato sul golfo
+                  di Castellammare, si trova il Panificio Da Nanà, un luogo dove
+                  la panificazione è una vera e propria arte tramandata di
+                  generazione in generazione. La storia di questo forno inizia
+                  nel 1941, ma le sue radici affondano ancora più lontano nel
+                  tempo, quando la famiglia Oliva avviò la sua attività già alla
+                  fine dell’Ottocento.&nbsp;</strong
                 >
               </p>
             </div>
@@ -315,13 +362,13 @@
           <div class="lc-block">
             <div editable="rich">
               <p>
-                Inoltre, i loro clienti apprezzano la loro varietà di biscotti.
-                Fatti rigorosamente a mano. A seguire e tramandare la passione e
-                la dedizione del padre è poi Enrico Oliva, che intraprende
-                l'attività facendo conoscore il suo pane a lievitazione
-                naturale, fatto con grani antichi biologici siciliani moliti a
-                pietra. Lo sfincione e il loro cavallo di battaglia, con sugo
-                fatto in casa e prodotti di prima qualità.
+                Il forno a legna originale, risalente agli anni ’20, è ancora
+                oggi il cuore pulsante del panificio. Alimentato con gusci di
+                mandorla, come vuole la tradizione, permette di ottenere una
+                cottura perfetta, una crosta croccante e un profumo
+                inconfondibile. Qui, solo i panificatori più esperti riescono a
+                padroneggiare l’arte della cottura a legna, preservando tecniche
+                antiche ormai quasi scomparse.
               </p>
             </div>
           </div>
@@ -329,14 +376,17 @@
             <div editable="rich">
               <p>
                 <em
-                  >Pellentesque eu dolor in enim efficitur dapibus id quis nisi.
-                  Quisque interdum bibendum vulputate. Nunc dui lacus, ultrices
-                  id gravida tempor, sollicitudin dapibus nisl. Vivamus dictum
-                  quam in purus commodo molestie. Mauris ultricies tortor urna.
-                  Praesent non aliquet lectus. Sed eget massa mauris. Vestibulum
-                  euismod cursus tortor, et aliquet orci facilisis eu. Cras
-                  ultricies luctus dolor quis laoreet. Suspendisse nisi massa,
-                  feugiat in dignissim sed, fermentum sed nibh.</em
+                  >A guidare questa realtà è stato per anni il maestro Leonardo
+                  Oliva, detto Nanà, custode dei segreti della lievitazione
+                  naturale e della panificazione tradizionale. Oggi, il
+                  testimone è passato a Enrico Oliva, che ha portato avanti la
+                  filosofia del padre con una maniacale attenzione alla qualità
+                  delle materie prime. Il concetto di km 0 è portato
+                  all’estremo: farine biologiche integrali, grani antichi
+                  siciliani macinati a pietra (Margherito, Senatore Cappelli,
+                  Perciasacchi), lievito madre rinfrescato da decenni, acqua
+                  oligominerale, olio extravergine d’oliva e sale in cristalli
+                  delle saline.</em
                 >
               </p>
             </div>
@@ -369,14 +419,12 @@
             <div editable="rich">
               <p>
                 <strong
-                  >Pellentesque eu dolor in enim efficitur dapibus id quis nisi.
-                  Quisque interdum bibendum vulputate. Nunc dui lacus, ultrices
-                  id gravida tempor, sollicitudin dapibus nisl. Vivamus dictum
-                  quam in purus commodo molestie. Mauris ultricies tortor urna.
-                  Praesent non aliquet lectus. Sed eget massa mauris. Vestibulum
-                  euismod cursus tortor, et aliquet orci facilisis eu. Cras
-                  ultricies luctus dolor quis laoreet. Suspendisse nisi massa,
-                  feugiat in dignissim sed, fermentum sed nibh.&nbsp;</strong
+                  >Il pane di Nanà non è solo buono, ma anche riconosciuto: il
+                  panificio ha ottenuto due pani nella guida del Gambero Rosso,
+                  confermando la qualità e l’eccellenza del suo prodotto.
+                  Lievitato naturalmente con cura e pazienza, il pane è
+                  aromatico, fragrante, altamente digeribile e si conserva a
+                  lungo, proprio come una volta.&nbsp;</strong
                 >
               </p>
             </div>
@@ -386,14 +434,15 @@
             <div editable="rich">
               <p>
                 <em
-                  >Pellentesque eu dolor in enim efficitur dapibus id quis nisi.
-                  Quisque interdum bibendum vulputate. Nunc dui lacus, ultrices
-                  id gravida tempor, sollicitudin dapibus nisl. Vivamus dictum
-                  quam in purus commodo molestie. Mauris ultricies tortor urna.
-                  Praesent non aliquet lectus. Sed eget massa mauris. Vestibulum
-                  euismod cursus tortor, et aliquet orci facilisis eu. Cras
-                  ultricies luctus dolor quis laoreet. Suspendisse nisi massa,
-                  feugiat in dignissim sed, fermentum sed nibh.&nbsp;</em
+                  >Tra le specialità più apprezzate spicca lo sfincione, un
+                  classico della tradizione siciliana. Preparato con ingredienti
+                  di prima qualità, sugo fatto in casa e formaggi DOP, si
+                  distingue per la sua morbidezza e il sapore ricco e
+                  avvolgente. Accanto al pane e allo sfincione, il panificio
+                  offre una variegata selezione di biscotti, tutti realizzati a
+                  mano con ingredienti naturali. Tra i più curiosi, quelli con
+                  farina di canapa e Maiorca, che esaltano la biodiversità dei
+                  grani antichi siciliani.&nbsp;</em
                 >
               </p>
             </div>
@@ -401,14 +450,14 @@
           <div class="lc-block text-secondary">
             <div editable="rich">
               <p>
-                Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum
-                erat wisi, condimentum sed, commodo vitae, ornare sit amet,
-                wisi. Aenean fermentum, elit eget tincidunt condimentum, eros
-                ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non
-                enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus,
-                neque id cursus faucibus, tortor neque egestas augue, eu
-                vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi,
-                tincidunt quis, accumsan porttitor, facilisis luctus, metus
+                Entrare nel Panificio Da Nanà significa immergersi in
+                un’atmosfera rustica e accogliente. La zona di vendita, piccola
+                e raccolta, precede il laboratorio, dove ogni giorno si rinnova
+                un sapere antico. Ogni prodotto racconta una storia fatta di
+                passione, dedizione e rispetto per la tradizione, portata avanti
+                con orgoglio dalla famiglia Oliva. Chi sceglie Nanà non compra
+                solo del pane, ma un pezzo di storia, un legame con la terra e
+                una promessa di autenticità e qualità senza compromessi.
               </p>
             </div>
           </div>
@@ -453,7 +502,10 @@
               />
             </svg>
           </a>
-          <a href="" class="text-white me-2 me-md-4">
+          <a
+            href="https://www.facebook.com/panificiodanana"
+            class="text-white me-2 me-md-4"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -603,7 +655,7 @@
         style="background-color: rgba(0, 0, 0, 0.366)"
       >
         © 2025 Copyright:
-        <a href="#">Panificio da Nanà</a>
+        <p class="d-inline-block">Panificio da Nanà</p>
       </div>
       <!-- Copyright -->
     </footer>
