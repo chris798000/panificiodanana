@@ -47,3 +47,7 @@
 #open-hours table tbody td {
   vertical-align: middle; /* Allinea verticalmente al centro */
 }
+
+.contact-title-type {
+  margin-top: 0;
+}
