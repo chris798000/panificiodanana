@@ -7,7 +7,7 @@
     <link rel="canonical" href="https://panificiodanana.it" />
     <link rel="icon" href="images/all/logo-white.svg" type="image/x-icon" />
 
-    <title>Panificio da Nanà - Storia</title>
+    <title>Panificio da Nanà - Ingredienti</title>
 
     <!--=============== BOOTSTRAP ===============-->
     <link
@@ -19,7 +19,7 @@
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="styles/general.css" />
-    <link rel="stylesheet" href="styles/contacts.css" />
+    <link rel="stylesheet" href="styles/ingredienti.css" />
   </head>
 
   <body style="position: relative">
@@ -88,7 +88,7 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link"
+                  class="nav-link active"
                   href="ingredienti.html"
                   data-translate="ingredients"
                   >Ingredienti</a
@@ -123,9 +123,9 @@
                   </li>
                 </ul>
               </div>
-              <div class="nav-item dropdown active">
+              <div class="nav-item dropdown">
                 <a
-                  class="nav-link active dropdown-toggle"
+                  class="nav-link dropdown-toggle"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                   data-translate="favorites"
@@ -146,13 +146,13 @@
                     <a
                       class="nav-link dropdown-item px-3"
                       data-translate="sfincione"
-                      href="sfincone.html"
+                      href="sfincione.html"
                       >Sfincione</a
                     >
                   </li>
                   <li>
                     <a
-                      class="nav-link dropdown-item active px-3"
+                      class="nav-link dropdown-item px-3"
                       data-translate="pane"
                       href="pane.html"
                       >Pane</a
@@ -202,7 +202,7 @@
             </li>
             <li class="nav-item text-caption">
               <a
-                class="nav-link"
+                class="nav-link active"
                 href="ingredienti.html"
                 data-translate="ingredients"
                 >Ingredienti</a
@@ -239,7 +239,7 @@
             </div>
             <div class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle active"
+                class="nav-link dropdown-toggle"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
                 data-translate="favorites"
@@ -266,7 +266,7 @@
                 </li>
                 <li>
                   <a
-                    class="nav-link dropdown-item active px-3"
+                    class="nav-link dropdown-item px-3"
                     data-translate="pane"
                     href="pane.html"
                     >Pane</a
@@ -295,173 +295,141 @@
       </div>
     </nav>
 
-    <!--HERO SECTION-->
-    <!-- Full Page Image Header with Vertically Centered Content -->
-    <header
-      class="masthead"
-      style="
-        background-image: url('images/story/hero.jpg');
-        margin-top: 56px;
-        height: 100vh;
-        min-height: 500px;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-      "
-    >
-      <div class="container h-100">
-        <div class="row h-100 align-items-center">
-          <div class="col-12 text-center text-white">
-            <h1
-              class="fw-bold text-white"
-              style="text-shadow: -6px -2px 10px rgba(66, 68, 90, 0.66)"
-            >
-              La nostra storia
-            </h1>
-            <p
-              class="lead"
-              style="text-shadow: -6px -2px 10px rgba(66, 68, 90, 0.66)"
-            >
-              Un viaggio attraverso la nostra tradizione e passione
+    <!--=============== MAIN ===============-->
+
+    <style>
+      .about-img-shape {
+        margin: 30px;
+        z-index: 1;
+      }
+      .about-img-shape::before {
+        position: absolute;
+        left: -31px;
+        top: -30px;
+        width: 80%;
+        height: 90%;
+        z-index: -1;
+        content: "";
+        background-color: var(--bs-dark);
+        transition: 0.5s;
+      }
+      .about-img-shape:after {
+        position: absolute;
+        right: -31px;
+        bottom: -30px;
+        width: 80%;
+        height: 90%;
+        z-index: -1;
+        content: "";
+        background-color: var(--bs-dark);
+        transition: 0.5s;
+      }
+      .img-fluid {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+
+    <div class="container" style="margin-top: 56px">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <div class="lc-block">
+            <h2 editable="inline" class="display-2 mb-0"><b>Ingredienti</b></h2>
+            <p editable="inline">
+              Scopri i nostri ingredienti naturali di alta qualità, selezionati
+              con cura per offrirti il meglio della tradizione artigianale.
             </p>
           </div>
+          <!-- /lc-block -->
         </div>
       </div>
-    </header>
 
-    <!-- MAIN CONTENT -->
-    <div class="container py-5">
-      <div class="row">
-        <div class="col-md-4 align-self-center">
-          <div class="lc-block border-top py-4" style="letter-spacing: 10px">
-            <div editable="rich">
-              <h2 class="text-uppercase" style="line-height: 40px">
-                <strong>La nostra storia</strong>
-              </h2>
+      <div class="container py-5">
+        <div class="row mx-4 my-5">
+          <div class="col-lg-5 align-self-center">
+            <div class="lc-block about-img-shape position-relative">
+              <img
+                class="img-fluid"
+                src="images/ingredienti/sale.jpg"
+                alt="Sale"
+              />
             </div>
+          </div>
+          <div class="col-lg-6 offset-lg-1 my-2 align-self-center">
+            <div class="lc-block">
+              <div editable="rich">
+                <h2>Sale delle Saline di Trapani<br /></h2>
+                <p>
+                  Il sale che utilizziamo proviene dalle storiche saline di
+                  Trapani, dove viene raccolto a mano secondo metodi
+                  tradizionali. Questo sale marino integrale è ricco di minerali
+                  naturali, che conferiscono ai nostri prodotti un sapore unico
+                  e autentico.
+                </p>
+              </div>
+            </div>
+            <!-- /lc-block -->
           </div>
         </div>
-        <div class="col-md-8">
-          <div class="lc-block">
-            <div editable="rich">
-              <p>
-                <strong
-                  >Nel cuore di Balestrate, piccolo comune affacciato sul golfo
-                  di Castellammare, si trova il Panificio Da Nanà, un luogo dove
-                  la panificazione è una vera e propria arte tramandata di
-                  generazione in generazione. La storia di questo forno inizia
-                  nel 1941, ma le sue radici affondano ancora più lontano nel
-                  tempo, quando la famiglia Oliva avviò la sua attività già alla
-                  fine dell’Ottocento.&nbsp;</strong
-                >
-              </p>
-            </div>
-          </div>
-          <div class="lc-block">
-            <div editable="rich">
-              <p>
-                Il forno a legna originale, risalente agli anni ’20, è ancora
-                oggi il cuore pulsante del panificio. Alimentato con gusci di
-                mandorla, come vuole la tradizione, permette di ottenere una
-                cottura perfetta, una crosta croccante e un profumo
-                inconfondibile. Qui, solo i panificatori più esperti riescono a
-                padroneggiare l’arte della cottura a legna, preservando tecniche
-                antiche ormai quasi scomparse.
-              </p>
-            </div>
-          </div>
-          <div class="lc-block">
-            <div editable="rich">
-              <p>
-                <em
-                  >A guidare questa realtà è stato per anni il maestro Leonardo
-                  Oliva, detto Nanà, custode dei segreti della lievitazione
-                  naturale e della panificazione tradizionale. Oggi, il
-                  testimone è passato a Enrico Oliva, che ha portato avanti la
-                  filosofia del padre con una maniacale attenzione alla qualità
-                  delle materie prime. Il concetto di km 0 è portato
-                  all’estremo: farine biologiche integrali, grani antichi
-                  siciliani macinati a pietra (Margherito, Senatore Cappelli,
-                  Perciasacchi), lievito madre rinfrescato da decenni, acqua
-                  oligominerale, olio extravergine d’oliva e sale in cristalli
-                  delle saline.</em
-                >
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!--Second section-->
-    <div class="container-fluid p-0">
-      <div class="row g-0">
-        <div
-          lc-helper="background"
-          class="col-md-6 order-md-2 ps-4 d-flex"
-          style="
-            background-size: cover;
-            background-position: center;
-            background-image: url('images/story/description.jpg');
-            min-height: 300px;
-          "
-        >
-          <div class="lc-block align-self-center text-light ms-4">
-            <div editable="rich">
-              <h2 class="text-white fw-bold display-1">
-                Da&nbsp;<br />Nanà&nbsp;
-              </h2>
+        <div class="row mx-4 flex-column-reverse flex-lg-row my-5">
+          <div class="col-lg-6 offset-lg-1 my-2 align-self-center">
+            <div class="lc-block">
+              <div editable="rich">
+                <h2>Pomodoro del Grillo</h2>
+                <p>
+                  Il Pomodoro del Grillo è un ingrediente fondamentale nei
+                  nostri prodotti. Coltivato con metodi biologici, questo
+                  pomodoro è noto per il suo sapore intenso e la sua dolcezza
+                  naturale. Viene raccolto a mano al giusto grado di maturazione
+                  per garantire la massima freschezza e qualità. Utilizziamo il
+                  Pomodoro del Grillo per creare salse e condimenti che esaltano
+                  il gusto autentico della tradizione siciliana.
+                </p>
+              </div>
+            </div>
+            <!-- /lc-block -->
+          </div>
+          <div class="col-lg-5 align-self-center">
+            <div class="lc-block about-img-shape position-relative">
+              <img
+                class="img-fluid"
+                src="images/ingredienti/pomodoro.jpg"
+                alt="Pomodoro"
+              />
             </div>
           </div>
         </div>
-        <div class="col-md-6 order-md-1" style="padding: 5vh 5vw">
-          <div class="lc-block mb-5">
-            <div editable="rich">
-              <p>
-                <strong
-                  >Il pane di Nanà non è solo buono, ma anche riconosciuto: il
-                  panificio ha ottenuto due pani nella guida del Gambero Rosso,
-                  confermando la qualità e l’eccellenza del suo prodotto.
-                  Lievitato naturalmente con cura e pazienza, il pane è
-                  aromatico, fragrante, altamente digeribile e si conserva a
-                  lungo, proprio come una volta.&nbsp;</strong
-                >
-              </p>
+
+        <div class="row mx-4 my-5">
+          <div class="col-lg-5 align-self-center">
+            <div class="lc-block about-img-shape position-relative">
+              <img
+                class="img"
+                src="images/ingredienti/farina.jpg"
+                alt="Farina"
+                style="width: 100%"
+              />
             </div>
           </div>
-          <!-- /lc-block -->
-          <div class="lc-block text-secondary pb-4">
-            <div editable="rich">
-              <p>
-                <em
-                  >Tra le specialità più apprezzate spicca lo sfincione, un
-                  classico della tradizione siciliana. Preparato con ingredienti
-                  di prima qualità, sugo fatto in casa e formaggi DOP, si
-                  distingue per la sua morbidezza e il sapore ricco e
-                  avvolgente. Accanto al pane e allo sfincione, il panificio
-                  offre una variegata selezione di biscotti, tutti realizzati a
-                  mano con ingredienti naturali. Tra i più curiosi, quelli con
-                  farina di canapa e Maiorca, che esaltano la biodiversità dei
-                  grani antichi siciliani.&nbsp;</em
-                >
-              </p>
+          <div class="col-lg-6 offset-lg-1 my-2 align-self-center">
+            <div class="lc-block">
+              <div editable="rich">
+                <h2>Farina Molini del Ponte<br /></h2>
+                <p>
+                  La farina che utilizziamo è prodotta dai Molini del Ponte,
+                  un'azienda siciliana che si distingue per la qualità delle sue
+                  farine artigianali. Questa farina è ottenuta da grani antichi
+                  coltivati localmente e macinati a pietra, preservando così
+                  tutte le proprietà nutrizionali e organolettiche del grano. Il
+                  risultato è una farina ricca di sapore e perfetta per la
+                  panificazione tradizionale.
+                </p>
+              </div>
             </div>
+            <!-- /lc-block -->
           </div>
-          <div class="lc-block text-secondary">
-            <div editable="rich">
-              <p>
-                Entrare nel Panificio Da Nanà significa immergersi in
-                un’atmosfera rustica e accogliente. La zona di vendita, piccola
-                e raccolta, precede il laboratorio, dove ogni giorno si rinnova
-                un sapere antico. Ogni prodotto racconta una storia fatta di
-                passione, dedizione e rispetto per la tradizione, portata avanti
-                con orgoglio dalla famiglia Oliva. Chi sceglie Nanà non compra
-                solo del pane, ma un pezzo di storia, un legame con la terra e
-                una promessa di autenticità e qualità senza compromessi.
-              </p>
-            </div>
-          </div>
-          <!-- /lc-block -->
         </div>
       </div>
     </div>
