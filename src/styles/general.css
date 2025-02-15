@@ -197,12 +197,12 @@ a:active {
 }
 
 body {
-  padding-bottom: 1700px; /* Default padding-bottom for small screens */
+  padding-bottom: 1600px; /* Default padding-bottom for small screens */
 }
 
 @media (min-width: 992px) {
   body {
-    padding-bottom: 1000px; /* Adjust padding for medium screens */
+    padding-bottom: 900px; /* Adjust padding for medium screens */
   }
 }
 
