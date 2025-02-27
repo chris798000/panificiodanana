@@ -224,34 +224,6 @@ nav .nav-link.active {
   z-index: 1000;
 }
 
-#language-selector #choose-lang-button {
-  border-radius: 30px;
-}
-
-#language-selector button {
-  color: #fff;
-  border: none;
-  padding: 10px;
-  background-color: rgb(33, 37, 41);
-}
-
-#language-menu {
-  display: none;
-  background-color: rgb(33, 37, 41);
-  border-radius: 30px;
-  padding: 10px;
-  margin-top: 5px;
-}
-
-#language-menu button {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  border: none;
-  text-align: left;
-  background-color: transparent;
-}
-
 /* hero*/
 .hero-image {
   width: 100%;
