@@ -440,7 +440,7 @@ body {
   position: absolute;
   top: 0;
   font-size: 14px;
-  background: #fff;
+  background: var(--bs-green);
   color: #fff;
   padding: 5px 8px;
   border-radius: 5px;
