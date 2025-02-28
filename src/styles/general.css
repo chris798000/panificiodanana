@@ -421,7 +421,7 @@ body {
 
 .wrapper .icon {
   position: relative;
-  background: #fff;
+  background: var(--bs-green);
   border-radius: 50%;
   margin: 10px;
   width: 50px;
@@ -477,6 +477,6 @@ body {
 .wrapper .call:hover,
 .wrapper .call:hover .tooltip,
 .wrapper .call:hover .tooltip::before {
-  background: var(--bs-green);
-  color: #fff;
+  background: white;
+  color: var(--bs-green);
 }
