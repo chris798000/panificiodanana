@@ -24,10 +24,10 @@
 
   <body style="position: relative">
     <!--=============== NAVBAR ===============-->
-    <nav id="navbar" class="navbar navbar-expand-lg">
+    <nav id="navbar" class="navbar navbar-dark navbar-expand-lg">
       <div class="container-fluid">
         <img
-          src="images/all/logo-black.svg"
+          src="images/all/logo-white.svg"
           alt="Logo"
           width="40"
           height="40"
@@ -57,7 +57,7 @@
             </div>
             <button
               type="button"
-              class="btn-close"
+              class="btn-close btn-close-white"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
             ></button>
@@ -505,10 +505,7 @@
       class="container-fluid text-center text-lg-start text-white footer-section p-0"
     >
       <!-- Section: Social media -->
-      <section
-        class="d-flex justify-content-between p-4"
-        style="background-color: rgba(0, 0, 0, 0.2)"
-      >
+      <section class="d-flex justify-content-between p-4" id="footer-social">
         <!-- Left -->
         <div class="d-none d-md-block me-5">
           <span data-translate="stayUpdated"
@@ -562,17 +559,14 @@
 
       <!-- Section: Links  -->
       <section>
-        <div class="container text-center text-md-start mt-5">
+        <div class="container text-center text-md-start pt-5">
           <!-- Grid row -->
           <div class="row mt-3">
             <!-- Grid column -->
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
               <!-- Content -->
               <h6 class="text-uppercase fw-bold">Panificio da Nanà</h6>
-              <hr
-                class="mb-4 mt-0 d-inline-block mx-auto"
-                style="width: 60px; background-color: #7c4dff; height: 2px"
-              />
+              <hr class="mb-4 mt-0 d-inline-block mx-auto" />
               <p data-translate="footerDescription">
                 Il Panificio da Nanà è un luogo dove la tradizione siciliana si
                 fonde con la qualità artigianale.
@@ -586,10 +580,7 @@
               <h6 class="text-uppercase fw-bold" data-translate="quickLinks">
                 Link rapidi
               </h6>
-              <hr
-                class="mb-4 mt-0 d-inline-block mx-auto"
-                style="width: 60px; background-color: #7c4dff; height: 2px"
-              />
+              <hr class="mb-4 mt-0 d-inline-block mx-auto" />
               <p>
                 <a href="index.html" data-translate="home">Home</a>
               </p>
@@ -618,10 +609,7 @@
               <h6 class="text-uppercase fw-bold" data-translate="favorites">
                 I più amati
               </h6>
-              <hr
-                class="mb-4 mt-0 d-inline-block mx-auto"
-                style="width: 60px; background-color: #7c4dff; height: 2px"
-              />
+              <hr class="mb-4 mt-0 d-inline-block mx-auto" />
               <p>
                 <a href="sfincione.html" data-translate="sfincione"
                   >Sfincione</a
@@ -648,10 +636,7 @@
               <h6 class="text-uppercase fw-bold" data-translate="specialties">
                 Specialità
               </h6>
-              <hr
-                class="mb-4 mt-0 d-inline-block mx-auto"
-                style="width: 60px; background-color: #7c4dff; height: 2px"
-              />
+              <hr class="mb-4 mt-0 d-inline-block mx-auto" />
               <p>
                 <a href="carbone.html" data-translate="carbone"
                   >Carbone e buccia di mandorla</a
@@ -671,10 +656,7 @@
       <!-- Section: Links  -->
 
       <!-- Copyright -->
-      <div
-        class="text-center p-3"
-        style="background-color: rgba(0, 0, 0, 0.366)"
-      >
+      <div class="text-center p-3" id="footer-copyright">
         © 2025 Copyright:
         <p class="d-inline-block">Panificio da Nanà</p>
       </div>
@@ -690,12 +672,15 @@
         default_language: "it",
         native_language_names: true,
         detect_browser_language: true,
+        languages: ["it", "en", "de", "fr", "es", "pt"],
         wrapper_selector: ".gtranslate_wrapper",
+        flag_size: 24,
         switcher_horizontal_position: "right",
+        switcher_open_direction: "top",
       };
     </script>
     <script
-      src="https://cdn.gtranslate.net/widgets/latest/float.js"
+      src="https://cdn.gtranslate.net/widgets/latest/dwf.js"
       defer
     ></script>
 
