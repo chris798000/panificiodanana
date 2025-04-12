@@ -149,6 +149,10 @@ a:active {
 }
 /* end typo */
 
+.text-danger {
+  color: rgb(0, 46, 0) !important;
+}
+
 footer hr {
   width: 60px;
   background-color: var(--primary);
@@ -223,6 +227,12 @@ footer hr {
 
 .navbar-toggler-button {
   border: none;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: var(--primary);
+  color: var(--bs-white);
 }
 /* Footer */
 
