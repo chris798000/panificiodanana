@@ -430,6 +430,15 @@
       </div>
     </div>
 
+    <style>
+      @media (max-width: 768px) {
+        /* Tablet */
+        #mandorlacroccante {
+          letter-spacing: 0.08em;
+        }
+      }
+    </style>
+
     <div class="container">
       <div class="row justify-content-center">
         <div
@@ -437,13 +446,10 @@
         >
           <div class="lc-block">
             <span
+              id="mandorlacroccante"
               class="h1 mx-auto d-flex text-white"
               editable="inline"
-              style="
-                writing-mode: vertical-rl;
-                letter-spacing: 0.08em;
-                white-space: nowrap;
-              "
+              style="writing-mode: vertical-rl; white-space: nowrap"
             >
               Mandorla croccante
             </span>
@@ -451,7 +457,9 @@
           <!-- /lc-block -->
         </div>
         <!-- /col -->
-        <div class="col-8 col-lg-6 col-xl-4">
+        <div
+          class="d-flex align-items-center justify-content-center col-8 col-lg-6 col-xl-4"
+        >
           <div class="lc-block">
             <div editable="rich">
               <p>
