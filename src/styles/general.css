@@ -154,7 +154,8 @@ a:active {
 }
 
 .btn-danger,
-.bg-primary {
+.bg-primary,
+.bg-danger {
   background-color: rgb(0, 46, 0) !important;
   border-color: rgb(0, 46, 0) !important;
 }

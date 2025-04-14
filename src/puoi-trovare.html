@@ -299,208 +299,197 @@
 
     <!--=============== MAIN ===============-->
 
-    <div class="container" style="margin-top: 56px">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <div class="lc-block">
-            <h1 id="title" editable="inline" class="mb-0">
+    <div
+      class="d-flex min-vh-100"
+      lc-helper="background"
+      style="
+        background: url(images/ingredienti/puoi-trovare.jpg) center / cover
+          no-repeat;
+        background-color: #444;
+        background-blend-mode: overlay;
+      "
+    >
+      <div
+        class="align-self-center text-center text-light col-md-8 offset-md-2"
+      >
+        <div class="lc-block mb-4">
+          <div editable="rich">
+            <h1
+              class="display-1 fw-bolder text-white"
+              style="text-shadow: -6px -2px 10px rgba(66, 68, 90, 0.66)"
+            >
               Da noi puoi trovare anche..
             </h1>
-            <p editable="inline">
+          </div>
+        </div>
+
+        <div class="lc-block">
+          <div editable="rich">
+            <p class="lead">
               Offriamo una vasta gamma di prodotti freschi e genuini, preparati
               con ingredienti di alta qualità.
             </p>
           </div>
-          <!-- /lc-block -->
+        </div>
+
+        <div class="lc-block">
+          <svg
+            onclick="if (!document.querySelector('body').classList.contains('livecanvas-is-editing') ) this.closest('section').nextElementSibling.scrollIntoView({ behavior: 'smooth'  });"
+            width="4em"
+            height="4em"
+            viewBox="0 0 16 16"
+            class="text-light"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+            lc-helper="svg-icon"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+            ></path>
+            <path
+              fill-rule="evenodd"
+              d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"
+            ></path>
+          </svg>
         </div>
       </div>
-
-      <div class="row">
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="p-lg-5 p-4 shadow">
-            <div class="lc-block mb-4">
-              <img
-                alt=""
-                class="img-fluid"
-                src="images/index/biscotti.jpg"
-                style="width: 100%"
-              />
-
-              <h4 class="my-3" editable="inline">1</h4>
-              <p editable="inline">
-                Scopri la nostra selezione di vini pregiati, perfetti per
-                accompagnare ogni pasto.
-              </p>
-
-              <a class="btn btn-outline-dark" href="#" role="button"
-                >Scopri di più</a
-              >
-            </div>
-            <!-- /lc-block -->
-          </div>
-          <div class="p-lg-5 p-4 shadow">
-            <div class="lc-block mb-4">
-              <img
-                alt=""
-                class="img-fluid"
-                src="images/index/biscotti.jpg"
-                style="width: 100%"
-              />
-
-              <h4 class="my-3" editable="inline">2</h4>
-              <p editable="inline">
-                Scopri la nostra selezione di vini pregiati, perfetti per
-                accompagnare ogni pasto.
-              </p>
-
-              <a class="btn btn-outline-dark" href="#" role="button"
-                >Scopri di più</a
-              >
-            </div>
-            <!-- /lc-block -->
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="p-lg-5 p-4 shadow">
-            <div class="lc-block mb-4">
-              <img
-                alt=""
-                class="img-fluid"
-                src="images/index/biscotti.jpg"
-                style="width: 100%"
-              />
-
-              <h4 class="my-3" editable="inline">3</h4>
-              <p editable="inline">
-                Scopri la nostra selezione di vini pregiati, perfetti per
-                accompagnare ogni pasto.
-              </p>
-
-              <a class="btn btn-outline-dark" href="#" role="button"
-                >Scopri di più</a
-              >
-            </div>
-            <!-- /lc-block -->
-          </div>
-          <div class="p-lg-5 p-4 shadow">
-            <div class="lc-block mb-4">
-              <img
-                alt=""
-                class="img-fluid"
-                src="images/index/biscotti.jpg"
-                style="width: 100%"
-              />
-
-              <h4 class="my-3" editable="inline">4</h4>
-              <p editable="inline">
-                Scopri la nostra selezione di vini pregiati, perfetti per
-                accompagnare ogni pasto.
-              </p>
-
-              <a class="btn btn-outline-dark" href="#" role="button"
-                >Scopri di più</a
-              >
-            </div>
-            <!-- /lc-block -->
-          </div>
-        </div>
-
-        <div class="col-12 col-lg-4 d-md-none d-lg-block">
-          <div class="p-lg-5 p-4 shadow">
-            <div class="lc-block mb-4">
-              <img
-                alt=""
-                class="img-fluid"
-                src="images/index/biscotti.jpg"
-                style="width: 100%"
-              />
-
-              <h4 class="my-3" editable="inline">5</h4>
-              <p editable="inline">
-                Scopri la nostra selezione di vini pregiati, perfetti per
-                accompagnare ogni pasto.
-              </p>
-
-              <a class="btn btn-outline-dark" href="#" role="button"
-                >Scopri di più</a
-              >
-            </div>
-            <!-- /lc-block -->
-          </div>
-          <div class="p-lg-5 p-4 shadow">
-            <div class="lc-block mb-4">
-              <img
-                alt=""
-                class="img-fluid"
-                src="images/index/biscotti.jpg"
-                style="width: 100%"
-              />
-
-              <h4 class="my-3" editable="inline">6</h4>
-              <p editable="inline">
-                Scopri la nostra selezione di vini pregiati, perfetti per
-                accompagnare ogni pasto.
-              </p>
-
-              <a class="btn btn-outline-dark" href="#" role="button"
-                >Scopri di più</a
-              >
-            </div>
-            <!-- /lc-block -->
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="d-none d-md-flex d-lg-none d-lg-block">
-          <div class="p-lg-5 p-4 shadow">
-            <div class="lc-block mb-4">
-              <img
-                alt=""
-                class="img-fluid"
-                src="images/index/biscotti.jpg"
-                style="width: 100%"
-              />
-
-              <h4 class="my-3" editable="inline">5</h4>
-              <p editable="inline">
-                Scopri la nostra selezione di vini pregiati, perfetti per
-                accompagnare ogni pasto.
-              </p>
-
-              <a class="btn btn-outline-dark" href="#" role="button"
-                >Scopri di più</a
-              >
-            </div>
-            <!-- /lc-block -->
-          </div>
-          <div class="p-lg-5 p-4 shadow">
-            <div class="lc-block mb-4">
-              <img
-                alt=""
-                class="img-fluid"
-                src="images/index/biscotti.jpg"
-                style="width: 100%"
-              />
-
-              <h4 class="my-3" editable="inline">6</h4>
-              <p editable="inline">
-                Scopri la nostra selezione di vini pregiati, perfetti per
-                accompagnare ogni pasto.
-              </p>
-
-              <a class="btn btn-outline-dark" href="#" role="button"
-                >Scopri di più</a
-              >
-            </div>
-            <!-- /lc-block -->
-          </div>
-        </div>
-      </div>
-
-      <!-- /col -->
     </div>
+
+    <div class="row text-center">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="p-lg-5 p-4 pm-2 m-4 shadow text-center">
+          <div class="lc-block mb-4">
+            <img
+              alt=""
+              class="img-fluid"
+              src="images/puoi-trovare/vino.png"
+              style="width: 100%"
+            />
+            <h4 class="my-3 text-center" editable="inline">Vini</h4>
+            <p class="text-center" editable="inline">
+              Scopri la nostra selezione di vini pregiati, perfetti per
+              accompagnare ogni pasto.
+            </p>
+            <button class="button-fade mx-auto d-block">
+              <span class="button-fade-content">Scopri di più </span>
+            </button>
+          </div>
+        </div>
+        <div class="p-lg-5 p-4 pm-2 m-4 shadow text-center">
+          <div class="lc-block mb-4">
+            <img
+              alt=""
+              class="img-fluid"
+              src="images/puoi-trovare/pinoli.png"
+              style="width: 100%"
+            />
+            <h4 class="my-3 text-center" editable="inline">Pinoli</h4>
+            <p class="text-center" editable="inline">
+              I nostri pinoli sono selezionati con cura per garantire freschezza
+              e qualità, ideali per arricchire ogni tua ricetta.
+            </p>
+            <button class="button-fade mx-auto d-block">
+              <span class="button-fade-content">Scopri di più </span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="p-lg-5 p-4 pm-2 m-4 shadow text-center">
+          <div class="lc-block mb-4">
+            <img
+              alt=""
+              class="img-fluid"
+              src="images/puoi-trovare/mollica.png"
+              style="width: 100%"
+            />
+            <h4 class="my-3 text-center" editable="inline">Mollica</h4>
+            <p class="text-center" editable="inline">
+              La nostra mollica di pane è soffice e fragrante, ideale per
+              esaltare il gusto di ogni piatto.
+            </p>
+            <button class="button-fade mx-auto d-block">
+              <span class="button-fade-content">Scopri di più </span>
+            </button>
+          </div>
+        </div>
+        <div class="p-lg-5 p-4 pm-2 m-4 shadow text-center">
+          <div class="lc-block mb-4">
+            <img
+              alt=""
+              class="img-fluid"
+              src="images/puoi-trovare/mandorle.png"
+              style="width: 100%"
+            />
+            <h4 class="my-3 text-center" editable="inline">Mandorle</h4>
+            <p class="text-center" editable="inline">
+              Le nostre mandorle siciliane sono un'eccellenza locale, dal sapore
+              autentico e dalla qualità superiore.
+            </p>
+            <button class="button-fade mx-auto d-block">
+              <span class="button-fade-content">Scopri di più </span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-4 d-md-none d-lg-block">
+        <div class="p-lg-5 p-4 pm-2 m-4 shadow text-center">
+          <div class="lc-block mb-4">
+            <img
+              alt=""
+              class="img-fluid"
+              src="images/index/biscotti.jpg"
+              style="width: 100%"
+            />
+            <h4 class="my-3 text-center" editable="inline">5</h4>
+            <p class="text-center" editable="inline">
+              Scopri la nostra selezione di vini pregiati, perfetti per
+              accompagnare ogni pasto.
+            </p>
+            <button class="button-fade mx-auto d-block">
+              <span class="button-fade-content">Scopri di più </span>
+            </button>
+          </div>
+        </div>
+        <div class="p-lg-5 p-4 pm-2 m-4 shadow text-center">
+          <div class="lc-block mb-4">
+            <img
+              alt=""
+              class="img-fluid"
+              src="images/index/biscotti.jpg"
+              style="width: 100%"
+            />
+            <h4 class="my-3 text-center" editable="inline">6</h4>
+            <p class="text-center" editable="inline">
+              Scopri la nostra selezione di vini pregiati, perfetti per
+              accompagnare ogni pasto.
+            </p>
+            <button class="button-fade mx-auto d-block">
+              <span class="button-fade-content">Scopri di più </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .row > .col-12 {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .row > .col-12 > .p-lg-5 {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    </style>
+
+    <!-- /col -->
 
     <!-- Footer -->
     <footer
