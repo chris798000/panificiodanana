@@ -904,9 +904,11 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="lc-block drop_caps_1">
+      <div class="row d-flex justify-content-center align-items-stretch">
+        <div class="col-lg-6 d-flex">
+          <div
+            class="lc-block drop_caps_1 d-flex flex-column justify-content-center"
+          >
             <div editable="rich">
               <p>
                 Al Panificio da Nanà, ci impegniamo a ridurre il nostro impatto
@@ -934,22 +936,121 @@
           <!-- /lc-block -->
         </div>
         <!-- /col -->
-        <div class="col-lg-6 align-self-center">
-          <div class="lc-block">
-            <img
-              class="img-fluid"
-              src="images/index/ecogreen.jpg"
-              alt="Veicolo elettrico"
-              loading="lazy"
-              style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2)"
-            />
+        <div class="col-lg-6 d-flex">
+          <div class="lc-block w-100 h-100">
+            <div class="h-100 w-100 overflow-hidden">
+              <img
+                class="img-fluid w-100 h-100"
+                src="images/index/ecogreen.jpg"
+                alt="Veicolo elettrico"
+                loading="lazy"
+                style="
+                  object-fit: cover;
+                  object-position: center;
+                  transition: transform 0.3s ease-in-out;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                "
+              />
+            </div>
           </div>
-          <!-- /lc-block -->
           <!-- /lc-block -->
         </div>
         <!-- /col -->
       </div>
     </div>
+
+    <!--olive raccolta section-->
+
+    <style>
+      .drop_caps_1:first-letter {
+        color: var(--dark);
+        float: left;
+        font-size: 75px;
+        line-height: 60px;
+        padding: 4px 8px 3px 0;
+        font-weight: 700;
+      }
+    </style>
+
+    <div class="container py-5 mb-5" style="margin-top: 100px">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="lc-block">
+            <div editable="rich">
+              <h1
+                class="fw-bold display-1 text-center mb-4"
+                style="color: var(--primary)"
+              >
+                Raccolta delle <span class="text-danger">olive</span>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center align-items-stretch">
+        <div class="col-lg-6 d-flex">
+          <div
+            class="lc-block drop_caps_1 d-flex flex-column justify-content-center"
+          >
+            <div editable="rich">
+              <p>
+                La raccolta delle olive è un momento cruciale per garantire la
+                qualità dell'olio che utilizziamo nei nostri prodotti. Ogni
+                anno, ci dedichiamo con passione a questa attività, selezionando
+                manualmente le olive migliori dai nostri uliveti. Questo
+                processo artigianale ci permette di preservare l'integrità del
+                frutto e di ottenere un olio dal sapore autentico e genuino.
+              </p>
+              <p>
+                Le olive vengono raccolte al momento giusto di maturazione,
+                quando il loro contenuto di nutrienti e aromi è al massimo.
+                Utilizziamo tecniche tradizionali che rispettano l'ambiente e
+                garantiscono un prodotto di alta qualità. Dopo la raccolta, le
+                olive vengono immediatamente trasportate al frantoio per essere
+                spremute a freddo, preservando così tutte le loro proprietà
+                organolettiche.
+              </p>
+              <p>
+                L'olio che otteniamo è il risultato di un lavoro meticoloso e di
+                una profonda conoscenza della tradizione. Questo olio, ricco di
+                sapore e di benefici per la salute, è l'ingrediente chiave che
+                utilizziamo per arricchire i nostri prodotti da forno,
+                conferendo loro un gusto unico e inconfondibile che racconta la
+                storia della nostra terra.
+              </p>
+            </div>
+          </div>
+          <!-- /lc-block -->
+        </div>
+        <!-- /col -->
+        <div class="col-lg-6 d-flex">
+          <div class="lc-block w-100 h-100">
+            <div class="h-100 w-100 overflow-hidden">
+              <img
+                class="img-fluid w-100 h-100"
+                src="images/index/olive.JPG"
+                alt="Veicolo elettrico"
+                loading="lazy"
+                style="
+                  object-fit: cover;
+                  object-position: center;
+                  transition: transform 0.3s ease-in-out;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                "
+              />
+            </div>
+          </div>
+          <!-- /lc-block -->
+        </div>
+        <!-- /col -->
+      </div>
+    </div>
+
+    <style>
+      .col-lg-6 img:hover {
+        transform: scale(1.1);
+      }
+    </style>
 
     <!--CONTACT SECTION-->
     <section>
@@ -1193,7 +1294,7 @@
 
     <!--call button-->
     <div class="d-md-none fixed-bottom" style="left: 0">
-      <a href="tel:+1234567890">
+      <a href="tel:+390918786077">
         <!-- From Uiverse.io by david-mohseni -->
         <ul class="wrapper m-0 ps-1 pe-0">
           <li class="icon call">
